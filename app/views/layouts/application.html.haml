@@ -3,7 +3,7 @@
   %head
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %title= content_for?(:title) ? yield(:title) : 'Bitboat'
-    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Bitboat'}"}
+    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Bitcoin 01'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -25,7 +25,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand.page-scroll{:href => "#page-top"} BitBoat
+          %a.navbar-brand.page-scroll{:href => "#page-top"} Bitcoin 01
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
@@ -42,52 +42,74 @@
     %header
       .header-content
         .header-content-inner
-          %h1 The decentralised flagship of the brave new digital nomad fleet
+          %h1.main-lead-text The first floating bitcoin hackspace and flagship of the brave new digitally nomadic fleet
           %hr/
-          %p Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
+          %p
           %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
     %section#about.bg-primary
       .container
         .row
           .col-lg-8.col-lg-offset-2.text-center
-            %h2.section-heading We've got what you need!
+            %h2.section-heading Be Part of the Revolution
             %hr.light/
-            %p.text-faded Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-            %a.btn.btn-default.btn-xl{:href => "#"} Get Started!
+            %p.text-faded Bitcoin 01 is the worlds first floating hackspace, location independent bitcoin node and digital nomad refuge.
+            %p.text-faded
+              We have a passion for the emerging decentralised maker econnomy and want to help more people get involved.
+            %a.btn.btn-default.btn-xl{:href => "#"} Become a Citizen
     %section#services
       .container
         .row
           .col-lg-12.text-center
-            %h2.section-heading At Your Service
+            %h2.section-heading 100% Bitcoin, 100% Freedom
             %hr.primary/
       .container
         .row
           .col-lg-3.col-md-6.text-center
             .service-box
               %i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
-              %h3 Sturdy Templates
-              %p.text-muted Our templates are updated regularly so they don't break.
+              %h3 Hackspace, Event Venue & More
+              %p.text-muted Dramatically bringing the intangable right to the heart of major cities around the world, with an onboard bitcoin cafe, makerspace and fairtrade tea delivery.
           .col-lg-3.col-md-6.text-center
             .service-box
               %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
-              %h3 Ready to Ship
-              %p.text-muted You can use this theme as is, or you can make changes!
+              %h3 Citizenship
+              %p.text-muted Anyone can become a citizen, entitled to join us sailing, vote on the next destination and help out.
           .col-lg-3.col-md-6.text-center
             .service-box
               %i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
-              %h3 Up to Date
-              %p.text-muted We update dependencies to keep things fresh.
+              %h3 Infrastructure
+              %p.text-muted Pushing the boundaries of eco-friendly mobile technology, meshnet networking and decentralisation.
           .col-lg-3.col-md-6.text-center
             .service-box
               %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
-              %h3 Made with Love
-              %p.text-muted You have to make your websites with love these days!
+              %h3 Just the Beginning
+              %p.text-muted Bitcoin 01 is just the start of a grownig fleet
     %section#portfolio.no-padding
       .container-fluid
         .row.no-gutter
           .col-lg-4.col-sm-6
             %a.portfolio-box{:href => "#"}
-              = image_tag "portfolio/1.jpg", class: "img-responsive"
+              = image_tag "sails_up.jpg", class: "img-responsive"
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Our Boat
+                  .project-name
+                    Quiet,
+
+          .col-lg-4.col-sm-6
+            %a.portfolio-box{:href => "#"}
+              = image_tag "spinnaker.jpg", class: "img-responsive"
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Hackspace
+                  .project-name
+                    Full onboard workshop, 3d Printing, IoT components and the world's only naval full bitcoin node
+          .col-lg-4.col-sm-6
+            %a.portfolio-box{:href => "#"}
+              = image_tag "sails-3.jpg", class: "img-responsive"
+
               .portfolio-box-caption
                 .portfolio-box-caption-content
                   .project-category.text-faded
@@ -96,27 +118,8 @@
                     Project Name
           .col-lg-4.col-sm-6
             %a.portfolio-box{:href => "#"}
-              = image_tag "portfolio/2.jpg", class: "img-responsive"
-              .portfolio-box-caption
-                .portfolio-box-caption-content
-                  .project-category.text-faded
-                    Category
-                  .project-name
-                    Project Name
-          .col-lg-4.col-sm-6
-            %a.portfolio-box{:href => "#"}
-              = image_tag "portfolio/3.jpg", class: "img-responsive"
-              
-              .portfolio-box-caption
-                .portfolio-box-caption-content
-                  .project-category.text-faded
-                    Category
-                  .project-name
-                    Project Name
-          .col-lg-4.col-sm-6
-            %a.portfolio-box{:href => "#"}
-              = image_tag "portfolio/4.jpg", class: "img-responsive"
-              
+              = image_tag "spinnaker_2.jpg", class: "img-responsive"
+
               .portfolio-box-caption
                 .portfolio-box-caption-content
                   .project-category.text-faded
@@ -126,7 +129,7 @@
           .col-lg-4.col-sm-6
             %a.portfolio-box{:href => "#"}
               = image_tag "portfolio/5.jpg", class: "img-responsive"
-              
+
               .portfolio-box-caption
                 .portfolio-box-caption-content
                   .project-category.text-faded
@@ -136,7 +139,7 @@
           .col-lg-4.col-sm-6
             %a.portfolio-box{:href => "#"}
               = image_tag "portfolio/6.jpg", class: "img-responsive"
-              
+
               .portfolio-box-caption
                 .portfolio-box-caption-content
                   .project-category.text-faded

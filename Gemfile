@@ -1,5 +1,15 @@
 source 'https://rubygems.org'
 ruby '2.2.1'
+
+
+# Assets
+source 'https://rails-assets.org' do
+  gem 'rails-assets-FitText.js'
+  gem 'rails-assets-wow'
+  gem 'rails-assets-fontawesome'
+end
+
+
 gem 'rails', '4.1.13'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'

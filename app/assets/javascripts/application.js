@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require FitText.js
+//= require wow
 //= require_tree .

@@ -1,10 +1,11 @@
 #bs-example-navbar-collapse-1.collapse.navbar-collapse
   %ul.nav.navbar-nav.navbar-right
     %li
-      = link_to "about", page_path('about')
+      = link_to "The Boat", page_path('map')
     %li
       = link_to "Map", page_path('map')
     %li
-      %a.page-scroll{:href => "#portfolio"} Citizenship
+      = link_to "Hackspace", page_path('map')
     %li
-      %a.page-scroll{:href => "#contact"} Contact
+      = link_to "Citizenship", page_path('citizen')
+    

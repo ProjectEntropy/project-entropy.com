@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actionmailer (4.1.13)
       actionpack (= 4.1.13)
@@ -91,6 +92,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.13)
       sprockets-rails (~> 2.0)
+    rails-assets-FitText.js (1.2.0)
+      rails-assets-jquery (>= 1.6)
+    rails-assets-fontawesome (4.4.0)
+    rails-assets-jquery (2.1.4)
+    rails-assets-wow (1.1.2)
     rails_layout (1.0.26)
     railties (4.1.13)
       actionpack (= 4.1.13)
@@ -150,6 +156,9 @@ DEPENDENCIES
   puma
   quiet_assets
   rails (= 4.1.13)
+  rails-assets-FitText.js!
+  rails-assets-fontawesome!
+  rails-assets-wow!
   rails_layout
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

@@ -26,6 +26,7 @@ gem 'haml-rails'
 gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
+
 group :development do
   gem 'better_errors'
   gem 'html2haml'
@@ -34,4 +35,5 @@ group :development do
 end
 group :production do
   gem 'puma'
+  gem 'rails_12factor'
 end

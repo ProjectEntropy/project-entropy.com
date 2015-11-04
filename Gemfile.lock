@@ -99,7 +99,12 @@ GEM
     rails-assets-fontawesome (4.4.0)
     rails-assets-jquery (2.1.4)
     rails-assets-wow (1.1.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_layout (1.0.28)
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.4)
     railties (4.1.13)
       actionpack (= 4.1.13)
       activesupport (= 4.1.13)
@@ -162,6 +167,7 @@ DEPENDENCIES
   rails-assets-FitText.js!
   rails-assets-fontawesome!
   rails-assets-wow!
+  rails_12factor
   rails_layout
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

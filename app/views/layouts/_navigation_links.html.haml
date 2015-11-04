@@ -1,9 +1,9 @@
 #bs-example-navbar-collapse-1.collapse.navbar-collapse
   %ul.nav.navbar-nav.navbar-right
     %li
-      %a.page-scroll{:href => "#about"} About
+      = link_to "about", page_path('about')
     %li
-      %a.page-scroll{:href => "#services"} Map
+      = link_to "Map", page_path('map')
     %li
       %a.page-scroll{:href => "#portfolio"} Citizenship
     %li

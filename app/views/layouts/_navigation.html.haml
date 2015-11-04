@@ -7,7 +7,11 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'Bitcoin 01', root_path, class: 'navbar-brand page-scroll'
+      = link_to root_path, class: 'navbar-brand page-scroll' do
+        %span.fa-stack
+          %i.fa.fa-life-ring.fa-stack-2x
+          %i.fa.fa-bitcoin.fa-stack-1x.fa-inverse
+        Bitcoin 01
 
     / Collect the nav links, forms, and other content for toggling
     = render 'layouts/navigation_links'

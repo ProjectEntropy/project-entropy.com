@@ -1,11 +1,18 @@
 #bs-example-navbar-collapse-1.collapse.navbar-collapse
   %ul.nav.navbar-nav.navbar-right
     %li
-      = link_to "The Boat", page_path('map')
+      = link_to page_path('map') do
+        %i.fa.fa-anchor
+        The Boat
     %li
-      = link_to "Map", page_path('map')
+      = link_to page_path('map') do
+        %i.fa.fa-map-o
+        Map
     %li
-      = link_to "Hackspace", page_path('map')
+      = link_to page_path('citizen') do
+        %i.fa.fa-fire-extinguisher
+        Hackspace
     %li
-      = link_to "Citizenship", page_path('citizen')
-    
+      = link_to page_path('citizen') do
+        %i.fa.fa-flag-o
+        Citizenship

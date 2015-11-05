@@ -9,9 +9,10 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-fontawesome'
 end
 
-
 gem 'rails', '4.1.13'
 gem 'sass-rails', '~> 4.0.3'
+# gem "fog", "~>1.20", require: "fog/aws/storage"
+gem 'asset_sync'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'

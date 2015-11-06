@@ -163,6 +163,8 @@ GEM
       nokogiri (~> 1.5, >= 1.5.11)
     font-awesome-sass (4.4.0)
       sass (>= 3.2)
+    font_assets (0.1.12)
+      rack
     formatador (0.2.5)
     haml (4.0.7)
       tilt
@@ -283,6 +285,7 @@ DEPENDENCIES
   better_errors
   coffee-rails (~> 4.0.0)
   font-awesome-sass (~> 4.4.0)
+  font_assets
   haml-rails
   high_voltage
   html2haml

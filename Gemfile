@@ -9,6 +9,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-fontawesome'
 end
 
+gem 'rack-cors', :require => 'rack/cors'
+
 gem 'rails', '4.1.13'
 gem 'sass-rails', '~> 4.0.3'
 # gem "fog", "~>1.20", require: "fog/aws/storage"

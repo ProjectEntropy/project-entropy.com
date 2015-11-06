@@ -24,7 +24,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'font-awesome-sass', '~> 4.4.0'
-gem 'font_assets'
+# gem 'font_assets'
 
 gem 'haml-rails'
 gem 'high_voltage'

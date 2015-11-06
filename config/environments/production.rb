@@ -33,7 +33,6 @@ Rails.application.configure do
   config.assets.digest = true
   config.assets.enabled = true
   config.assets.prefix = "/bitboat/assets"
-  config.font_assets.origin = 'http://bitcoin01.herokuapp.com'
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

@@ -24,11 +24,9 @@ module Bitboat
       allow do
         origins '*'
 
-        resource '/cors',
+        resource '/fonts/*',
           :headers => :any,
-          :methods => [:post],
-          :credentials => true,
-          :max_age => 0
+          :methods => [:get]
 
         resource '*',
           :headers => :any,

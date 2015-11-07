@@ -3,7 +3,7 @@
   %head
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %title= content_for?(:title) ? yield(:title) : 'Entropy'
-    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Bitcoin 01'}"}
+    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Entropy'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true

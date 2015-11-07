@@ -8,10 +8,7 @@
         %span.icon-bar
         %span.icon-bar
       = link_to root_path, class: 'navbar-brand page-scroll' do
-        %span.fa-stack.fa-lg
-          %i.fa.fa-circle.fa-stack-2x.logo_ring
-          %i.fa.fa-bitcoin.fa-stack-1x.fa-inverse.logo_bitcoin
-        Bitcoin 01
+        = image_tag "entropy_logo_text_white.png", style: "max-width:150px; margin-top: -9px;"
 
     / Collect the nav links, forms, and other content for toggling
     = render 'layouts/navigation_links'

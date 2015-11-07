@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title= content_for?(:title) ? yield(:title) : 'Bitboat'
+    %title= content_for?(:title) ? yield(:title) : 'Entropy'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Bitcoin 01'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'
@@ -12,8 +12,6 @@
   /   %main{:role => "main"}
   /     = render 'layouts/messages'
   /
-
-
 
   %body#page-top
     = render 'layouts/navigation'

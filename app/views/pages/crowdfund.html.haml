@@ -1,16 +1,27 @@
 %header.boat
   .header-content
     .header-content-inner
-      %h1.main-lead-text Help this world first - be part of history
-      %hr/
-      %p
-      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#map"} See rewards
-%section#map
-  .container
-    .row
-      .col-lg-12.text-center
-        %h2.section-heading Crowdfund
-        %hr.primary/
-        %p.lead This project is entirely backed by Bitcoin funders from all over the world
-        %p Every contributor will recieve Entropy Tokens, which unlock backer rewards and allow for blockchain-based voting on all matters, including future destinations, equipment and running of the project
-        %a.btn.btn-primary.btn-xl.page-scroll{:href => "#map"} Become a Backer
+      .panel.panel-default.crowdfund-panel
+        .panel-heading
+          %h2 
+            Bitcoin Crowdsale
+        .panel-body
+          .row
+            .col-md-6
+              = image_tag "entropy_logo_text_grey.png", class: "img-responsive"
+            .col-md-6
+              %ul
+                %li.stats
+                  %i.fa.fa-heart.text-muted
+                  0
+                  %span.detail Backers
+                %li.stats
+                  %i.fa.fa-bitcoin.text-muted
+                  0.00
+                  %span.detail Raised out of 5,000 goal
+                %li.stats
+                  %i.fa.fa-alarm
+                  30
+                  %span.detail Days to go
+                
+

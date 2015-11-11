@@ -1,16 +1,82 @@
 %header.boat
   .header-content
     .header-content-inner
-      %h1.main-lead-text Help this world first - be part of history
-      %hr/
-      %p
-      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#map"} See rewards
+      .panel.panel-default.crowdfund-panel
+        .panel-heading
+          %h2 
+            Bitcoin Crowdsale
+        .panel-body
+          .row
+            .col-md-6
+              = image_tag "entropy_logo_text_grey.png", class: "img-responsive"
+            .col-md-6
+              %ul
+                %li.stats
+                  %i.fa.fa-heart.text-muted.backer-stat-icon
+                  0
+                  %span.detail Backers
+                %li.stats
+                  %i.fa.fa-bitcoin.text-muted.backer-stat-icon
+                  0.00
+                  %span.detail Raised out of 1,350 goal
+                %li.stats
+                  %i.fa.fa-calendar.text-muted.backer-stat-icon
+                  30
+                  %span.detail Days to go
+
+          .row
+            .col-md-12
+              .progress
+                .progress-bar.progress-bar-warning.progress-bar-striped{ style: "width: 60%" }
+              %a.pull-right.btn.btn-primary.btn-xl.page-scroll{:href => "#rewards"} Back this Project
+      
 %section#map
   .container
     .row
-      .col-lg-12.text-center
-        %h2.section-heading Crowdfund
-        %hr.primary/
-        %p.lead This project is entirely backed by Bitcoin funders from all over the world
-        %p Every contributor will recieve Entropy Tokens, which unlock backer rewards and allow for blockchain-based voting on all matters, including future destinations, equipment and running of the project
-        %a.btn.btn-primary.btn-xl.page-scroll{:href => "#map"} Become a Backer
+      .col-md-6
+        .panel.panel-default.crowdfund-panel
+          .panel-heading
+            %h4
+              About Project Entropy
+          .panel-body
+            %p
+              %strong What are we doing?
+              Our dream is to fit out the worlds first bitcoin based floating hackspace and set sail continously around the world on 100% clean, sustainable energy.
+            %p                
+              Bitcoin projects are largely intangalbe, so one of our aims is to bring blockchain based technology into the spotlight, capturing peoples imaginations and showing what a few enthusiastic people can do.
+            %p                
+              Everything about the project is bitcoin based, encouraging fresh new real world uses. When not possible to use bitcoin directly, we will fall back on bitcoin-backed services.
+
+            %p
+              %strong Why are we doing it?
+              We've always had a passion for sailing, technology and decentralisation. So a hackspace aboard a catamaran seems like the ideal project for us!
+      .col-md-6    
+        %h4
+          %i.fa.fa-bitcoin
+          %strong 
+            0.01 or more
+          [ 5,000 Available ]
+        %p
+          %strong 1x Entropy Digital Citizenship Token,
+          offically part of the community, entitled to vote on all matters, including the vessels next destination; Lifetime discount of 50% off: time aboard, cafe and any other events. Limited to one per person.
+        
+        %hr
+        %h4
+          %i.fa.fa-bitcoin
+          %strong 
+            0.1 or more
+          [ 2,000 Available ]
+        %p
+          %strong 1x Postcard
+          We will write and send you a postcard from somewhere around the world. We will make sure there are no spiders attached.
+
+        %hr
+        %h4
+          %i.fa.fa-bitcoin
+          %strong 
+            1.0 or more
+          [ 2,000 Available ]
+        %p
+          %strong Cinema Night
+          You can come aboard for one of our exclusive backer events
+        

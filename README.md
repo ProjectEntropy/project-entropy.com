@@ -1,48 +1,15 @@
-Bitboat
+Project Entropy
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+What are we doing? Our dream is to fit out the worlds first bitcoin based floating hackspace and set sail continously around the world on 100% clean, sustainable energy.
 
-Rails Composer is open source and supported by subscribers. Please join RailsApps to support development of Rails Composer.
+Bitcoin projects are largely intangalbe, so one of our aims is to bring blockchain based technology into the spotlight, capturing peoples imaginations and showing what a few enthusiastic people can do.
 
-Problems? Issues?
------------
+Everything about the project is bitcoin based, encouraging fresh new real world uses. When not possible to use bitcoin directly, we will fall back on bitcoin-backed services.
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.2.1
-- Rails 4.1.13
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
 
 Contributing
 ------------
 
-Credits
--------
-
-License
--------
+Hit us up with a PR, or join the discussion over on [Collabotree](http://collabotree.com/leafs/entropy-bitcoin-coworking-space-aboard-a-catamaran)

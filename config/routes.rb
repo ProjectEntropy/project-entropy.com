@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  get "crowdfund", controller: "crowdfund", action: "index"
+
+  root to: 'visitors#index'  
 end

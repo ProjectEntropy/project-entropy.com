@@ -20,14 +20,14 @@
         %p.lead Whenever possible, anyone is welcome to come aboard for plenty of hot drinks, regular maker nights, events and talks.
         %p.lead
           Citizens not only have a say in where we go next, but can join us as we travel there
-        %a.btn.btn-default.btn-xl{:href => "#"} Become a Citizen
+        = link_to "become a citizen", crowdfund_path, class: "btn btn-default btn-xl"
 %section#map
   .container
     .row
       .col-lg-12.text-center
         %h2.section-heading Route
         %hr.primary/
-        %p.lead Entropy steadily heads West on a schedule to avoid storm seasons, while harnessing the natural trade winds.
+        %p.lead Entropy steadily heads West on a schedule carefully planned to avoid storm seasons while harnessing the natural trade winds.
         %p.lead The community at large decides the next port of call
         = link_to page_path('map') do
           = image_tag 'worldmap_1.png', class: "img-responsive"
@@ -93,6 +93,41 @@
               .project-name
                 Funding, planning and running Entropy is pushing the boundaries of what an organisation can be, building Open Source projects to help others follow the same path
 
+%section#team
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
+        %h2.section-heading Who we are
+        %hr.primary/
+        %p We're an enthusiastic and friendly group of technologists, creatives, environmentalists and dreamers
+    .row
+      .col-lg-3.text-center
+        = image_tag "joran_1.jpg", class: "img-responsive profile_pic"
+        %p Joran Kikke
+        %p.text-muted Skipper
+        %p
+          %a{:href => "mailto:joran.k@project-entropy.com"}
+            %i.fa.fa-envelope-o
+          %a{:href => ""}
+            %i.fa.fa-linkedin
+          %a{:href => ""}
+            %i.fa.fa-twitter
+
+      .col-lg-3.text-center
+        = image_tag "helena_1.jpg", class: "img-responsive profile_pic"
+        %p Helena Teichrib
+        %p.text-muted Creative Dreamer & Designer
+        %p
+          %a{:href => "mailto:helena.rib@project-entropy.com"}
+            %i.fa.fa-envelope-o
+          %a{:href => ""}
+            %i.fa.fa-linkedin
+          %a{:href => ""}
+            %i.fa.fa-twitter
+      .col-lg-3.text-center
+
+      .col-lg-3.text-center
+        
 %section#contact
   .container
     .row

@@ -13,7 +13,16 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'rails', '4.1.13'
 gem 'sass-rails', '~> 4.0.3'
-# gem "fog", "~>1.20", require: "fog/aws/storage"
+
+# Environment Variables
+gem "figaro"
+
+# API Calling
+gem 'rest-client'
+
+# Bitcoin units
+gem 'satoshi-unit'
+
 gem 'asset_sync'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'

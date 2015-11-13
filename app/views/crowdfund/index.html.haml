@@ -3,7 +3,7 @@
     .row
       .panel.panel-default.crowdfund-panel
         .panel-heading
-          %h2 
+          %h2
             Bitcoin Crowdsale
         .panel-body
           .row
@@ -17,7 +17,7 @@
                   %span.detail Backers
                 %li.stats
                   %i.fa.fa-bitcoin.text-muted.backer-stat-icon
-                  0.00
+                  = @total_raised.to_btc
                   %span.detail Raised out of 1,350 goal
                 %li.stats
                   %i.fa.fa-calendar.text-muted.backer-stat-icon
@@ -29,7 +29,7 @@
               .progress
                 .progress-bar.progress-bar-warning.progress-bar-striped{ style: "width: 60%" }
               %a.pull-right.btn.btn-primary.btn-xl.page-scroll{:href => "#rewards"} Back this Project
-      
+
 %section#map
   .container
     .row
@@ -41,36 +41,39 @@
           .panel-body
             %p
               %strong What are we doing?
-              We are fitting out the worlds first bitcoin based floating hackspace and setting sail continously around the world on 100% clean, sustainable energy. All with the aims of inspiring people to see what's possible and to learn more about Bitcoin, Blockchain and decentralisation.
+              We are fitting out the worlds first bitcoin based floating hackspace and setting sail continously around the world on 100% clean, sustainable energy. All with the aims of inspiring people to see what's possible and to learn more about making, decentralisation and Bitcoin.
             %p
-              Bitcoin projects are largely intangalbe, so one of our aims is to bring blockchain based technology into the spotlight, capturing peoples imaginations and showing what a few enthusiastic people can do.
-            %p                
-              Everything about the project is bitcoin based, encouraging fresh new real world uses. When not possible to use bitcoin directly, we will fall back on bitcoin-backed services.
+              Many recent projects are largely intangalbe, so one of our aims is to bring a dramatic physical project into the spotlight, capturing peoples imaginations and showing what a few enthusiastic people can do.
+            %p
+              Everything about the project is open source and bitcoin based, encouraging fresh new real world uses. When not possible to use bitcoin directly, we will fall back on bitcoin-backed services.
 
             %p
               %strong Why are we doing it?
-              We've always had a passion for sailing, technology and decentralisation. So a hackspace aboard a catamaran seems like the ideal project for us!
+              We've always had a passion for sailing, technology, environmentalism, open source software and decentralisation. So a hackspace aboard a catamaran seems like the ideal experiment
 
             %p
               %strong How will funds be used?
               Firstly all donations are safely kept across multiple mutisig cold storage wallets distributed across multiple sites.
 
-              The majority of funds will go towards the purchase and outfitting of a suitable sailing catamaran. We aim to keep as much of the project in Bitcoin as possible, so what feels right is to seek out a used boat for sale in an ecconomy recently let down by the financial sector, such as Greece, then offer to buy it at a premium with Bitcoin.
+              The majority of funds will go towards the purchase and outfitting of a suitable sailing catamaran. It feels right to seek out a used boat for sale in an ecconomy recently let down by the financial sector then offer to buy it at a premium with Bitcoin.
 
-      .col-md-6    
+              The remaining funds will be used to see us over for two years, giving everyone the chance to come aboard.
+
+              Year 3 we aim to grow the fleet, to allow more people to stay board, opening up the space to more people long term.
+      .col-md-6
         %h4
           %i.fa.fa-bitcoin
-          %strong 
+          %strong
             0.01 or more
           [ 5,000 Available ]
         %p
           %strong 1x Entropy Digital Citizenship Token,
           offically part of the community, entitled to vote on all matters, including the vessels next destination; Lifetime discount of 50% off: time aboard, cafe and any other events. Limited to one per person.
-        
+
         %hr
         %h4
           %i.fa.fa-bitcoin
-          %strong 
+          %strong
             0.1 or more
           [ 2,000 Available ]
         %p
@@ -80,10 +83,9 @@
         %hr
         %h4
           %i.fa.fa-bitcoin
-          %strong 
+          %strong
             1.0 or more
           [ 2,000 Available ]
         %p
           %strong Cinema Night
           You can come aboard for one of our exclusive backer events
-        

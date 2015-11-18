@@ -20,6 +20,9 @@ gem "figaro"
 # API Calling
 gem 'rest-client'
 
+# Cache
+gem 'dalli'
+
 # Bitcoin units
 gem 'satoshi-unit'
 

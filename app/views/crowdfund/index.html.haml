@@ -13,12 +13,14 @@
               %ul
                 %li.stats
                   %i.fa.fa-heart.text-muted.backer-stat-icon
-                  0
+                  %span#backers
+                    = "-"
                   %span.detail Backers
                 %li.stats
                   %i.fa.fa-bitcoin.text-muted.backer-stat-icon
-                  = @total_raised.to_btc
-                  %span.detail Raised out of 1,350 goal
+                  %span#total_raised
+                    = "-"
+                  %span.detail Raised out of #{@goal} goal
                 %li.stats
                   %i.fa.fa-calendar.text-muted.backer-stat-icon
                   30
@@ -27,7 +29,7 @@
           .row
             .col-md-12
               .progress
-                .progress-bar.progress-bar-warning.progress-bar-striped{ style: "width: 60%" }
+                .progress-bar.progress-bar-warning.progress-bar-striped{ style: "width: #{@percent}%" }
               %a.pull-right.btn.btn-primary.btn-xl.page-scroll{:href => "#rewards"} Back this Project
 
 %section#map

@@ -2,8 +2,6 @@ require 'coinprism'
 
 class CrowdfundController < ApplicationController
   def index
-    # Get live stats on crowdfund
-    @total_raised = Coinprism.balance
-    @backers      = Coinprism.asset_owners.owners.length
+    @goal = ENV['btc_crowdfund_goal']|| 0.0
   end
 end

@@ -46,6 +46,10 @@ gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
 group :development do
   gem 'better_errors'
   gem 'html2haml'

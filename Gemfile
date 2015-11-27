@@ -47,6 +47,9 @@ gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails'
+end
+
+group :test do
   gem 'vcr'
   gem 'webmock'
 end

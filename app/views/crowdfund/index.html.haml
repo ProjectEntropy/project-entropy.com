@@ -4,7 +4,7 @@
       .panel.panel-default.crowdfund-panel
         .panel-heading
           %h2
-            Bitcoin Crowdsale
+            Bitcoin Crowdfund
         .panel-body
           .row
             .col-md-6
@@ -27,58 +27,38 @@
                   %span.detail Days to go
 
           .row
-            .col-md-10
-              .progress{ style: "width: 30%" }
-                .progress-bar.progress-bar-warning.progress-bar-striped{ style: "width: #{@percent}%" }
-                  = "#{@percent}%"
-              %h3 
-                Goal 1 -
-                %span.text-muted
-                  %i.fa.fa-bitcoin
-                  500
-                %small
-                  "Realistic"
-              
-              %ul
-                %li 50' Sail Catamaran
-                %li Hackerspace Onboard
-                %li First nomadic Bitcoin community
-              
-            .col-md-2
-              %h3
-
-          %hr
-          .row
-            .col-md-10
-              .progress{ style: "width: 50%" }
-                .progress-bar.progress-bar-warning.progress-bar-striped{ style: "width: #{@percent}%" }
-              %h3 
-                Goal 2 -
-                %span.text-muted
-                  %i.fa.fa-bitcoin
-                  1,500
-                %small
-                  "Dreaming big"
-              %ul
-                %li 80' Sail Catamaran
-                %li More space for people to stay aboard
-                
-          %hr  
-          .row
-            .col-md-10
+            .col-md-12
               .progress
                 .progress-bar.progress-bar-warning.progress-bar-striped{ style: "width: #{@percent}%" }
                   = "#{@percent}%"
-              %h3 
-                Goal 3 -
+
+            .col-md-4
+              %h3
+                Goal -
                 %span.text-muted
                   %i.fa.fa-bitcoin
-                  17,000
-                %small
-                  "Changing the world"
-              %ul
-                %li 105' Superyacht
-              
+                  300
+
+              %ul.list-group
+                %li.list-group-item
+                  %i.fa.fa-expand
+                  Large Sail Catamaran
+                %li.list-group-item
+                  %i.fa.fa-dollar
+                  Non commercial
+                %li.list-group-item
+                  %i.fa.fa-bitcoin
+                  Entirely bitcoin based
+                %li.list-group-item
+                  %i.fa.fa-wrench
+                  Floating Hackerspace
+                %li.list-group-item
+                  %i.fa.fa-youtube
+                  Regular Video Blogs
+                %li.list-group-item
+                  %i.fa.fa-globe
+                  Foundations for Nomadic Bitcoin community
+            .col-md-8
               %a.pull-right.btn.btn-primary.btn-xl.page-scroll{:href => "#rewards"} Back this Project
 
 %section#map

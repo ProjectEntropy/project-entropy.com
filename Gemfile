@@ -4,15 +4,17 @@ ruby '2.2.1'
 
 # Assets
 source 'https://rails-assets.org' do
-  gem 'rails-assets-FitText.js'
   gem 'rails-assets-wow'
   gem 'rails-assets-fontawesome'
 end
 
 gem 'rack-cors', :require => 'rack/cors'
 
-gem 'rails', '4.1.13'
-gem 'sass-rails', '~> 4.0.3'
+gem 'rails'
+gem 'sass-rails'
+
+# JS assets
+gem 'fittextjs_rails'
 
 # Environment Variables
 gem "figaro"
@@ -30,16 +32,13 @@ gem 'satoshi-unit'
 gem 'coinprism'
 
 gem 'asset_sync'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
-
-# gem 'font-awesome-sass', '~> 4.4.0'
-# gem 'font_assets'
+gem 'jbuilder'
+gem 'sdoc',    group: :doc
+gem 'spring',  group: :development
 
 gem 'haml-rails'
 gem 'high_voltage'
@@ -47,7 +46,7 @@ gem 'pg'
 gem 'simple_form'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails'
 end
 
 group :development do

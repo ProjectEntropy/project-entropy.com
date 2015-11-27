@@ -1,3 +1,5 @@
+require 'coinprism_api'
+
 class CrowdfundDataController < ApplicationController
   def show
     # Get live stats on crowdfund

@@ -12,10 +12,7 @@ class CoinprismApi
 
   def self.balance(address = nil)
     address = ENV['btc_crowdfund_address'] unless address
-
-    cached_get("address_info_balance") do
-      balance = address_info(address).balance
-    end
+    balance = address_info(address).balance
     Satoshi.new(balance, from_unit: :satoshi)
   end
 

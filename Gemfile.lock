@@ -47,6 +47,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    coinprism (1.0.1)
+      rake (~> 10)
+      rest-client (~> 1)
     dalli (2.7.4)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
@@ -294,6 +297,7 @@ DEPENDENCIES
   asset_sync
   better_errors
   coffee-rails (~> 4.0.0)
+  coinprism
   dalli
   figaro
   haml-rails

@@ -26,6 +26,9 @@ gem 'dalli'
 # Bitcoin units
 gem 'satoshi-unit'
 
+# Coinprism Colored Coins API
+gem 'coinprism'
+
 gem 'asset_sync'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'

@@ -3,11 +3,11 @@ class CrowdfundDataController < ApplicationController
     # Get live stats on crowdfund
     if params[:metric] == 'asset'
       render json: {
-        total_backers: Coinprism.asset_owners.owners.length,
-        backers: Coinprism.asset_owners.owners
+        total_backers: CoinprismApi.asset_owners.owners.length,
+        backers: CoinprismApi.asset_owners.owners
       }
     elsif params[:metric] == 'btc'
-      total_raised = Coinprism.balance
+      total_raised = CoinprismApi.balance
       goal = ENV['btc_crowdfund_goal']|| 0.0
 
       render json: {

@@ -1,4 +1,4 @@
-require 'coinprism'
+require 'coinprism_api'
 
 class CrowdfundController < ApplicationController
   def index

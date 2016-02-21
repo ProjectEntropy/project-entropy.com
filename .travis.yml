@@ -7,3 +7,9 @@ services:
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
+
+env:
+  global:
+    - btc_crowdfund_address="1L7jnZWnbfLeLim4uGjY4haYx4u1wgvX6e"
+    - asset_id="AdjonhsTtUxo26WhFk1LxayXNUZa7jkszX"
+    - btc_crowdfund_goal=300

@@ -5,11 +5,9 @@ Project Entropy
 [![Dependency Status](https://img.shields.io/gemnasium/ProjectEntropy/project-entropy.com.svg)](https://gemnasium.com/ProjectEntropy/project-entropy.com)
 
 
-What are we doing? Our dream is to fit out the worlds first Bitcoin based floating hackspace and set sail continuously around the world on 100% clean, sustainable energy.
+What are we doing? Our dream is to fit out the worlds first Blockchain based floating hackspace and set sail continuously around the world on 100% clean, sustainable energy.
 
-Bitcoin projects are largely intangible, so one of our aims is to bring blockchain based technology into the spotlight, capturing peoples imaginations and showing what a few enthusiastic people can do.
-
-Everything about the project is bitcoin based, encouraging fresh new real world uses. When not possible to use bitcoin directly, we will fall back on bitcoin-backed services.
+Blockchain projects are largely intangible, so one of our aims is to bring blockchain based technology into the spotlight, capturing peoples imaginations and showing what a few enthusiastic people can do.
 
 
 

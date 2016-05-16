@@ -8,18 +8,18 @@
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Freedom
+        %h2.section-heading Our Mission
         %hr.light/
-        %p.lead Entropy is the worlds first floating hackspace, blockchain controlled sailing vessel and global refuge for digital nomads.
+        %p.lead Entropy is the worlds first floating hackspace, blockchain controlled sailing vessel and global community.
         %p.lead.text-faded
-          We have a passion for the emerging decentralised world and are embarking on an experimental global voyage, pushing the limits of
+          We have a shared passion for the emerging decentralised movement and are embarking on a global voyage to explore how new technology can be used to create a more equal and sustainable society for all.
       .col-lg-8.col-lg-offset-2.text-center
         %hr.light/
-        %h2.section-heading For Everyone
+        %h2.section-heading Decentralized, OpenSource Freedom
 
-        %p.lead Whenever possible, anyone is welcome to come aboard for plenty of hot drinks, regular maker nights, events and talks.
-        %p.lead
-          Anyone can join our community with not only a say in what we do and where we go, but you can join us as we travel there
+        %hr.primary/
+        %p.lead Community Hub, Hackspace, Event Venue & More
+        %p.lead Dramatically bringing the intangible right to the heart of major cities around the world, with an onboard bitcoin/ethereum cafe, hackerspace and global fairtrade goods delivery.
         -# = link_to "become a citizen", crowdfund_path, class: "btn btn-default btn-xl"
 %section#map
   .container
@@ -27,7 +27,7 @@
       .col-lg-12.text-center
         %h2.section-heading Route
         %hr.primary/
-        %p.lead Entropy steadily heads West on a schedule carefully planned to avoid storm seasons while harnessing the natural trade winds.
+        %p.lead Entropy steadily heads West on a schedule directed and voted for by the community, avoiding storm seasons while harnessing the natural trade winds.
         %p.lead The community at large decides the next port of call
         = link_to page_path('map') do
           = image_tag 'worldmap_1.png', class: "img-responsive wow fadeIn"
@@ -36,25 +36,40 @@
   .container
     .row
       .col-lg-12.text-center
-        %h2.section-heading Decentralized freedom
+        %h2.section-heading Our Goals
         %hr.primary/
+      .col-lg-8.col-lg-offset-2.text-center
+        %p.lead The following objectives define the initial purpose of the project, but as the community grows these may be extended, added to, removed or changed by its Citizens.
+        %p.lead Anyone can join our community with not only a say in what we do and where we go, but you can join us as we travel around.
   .container
     .row
       .col-lg-3.col-md-6.text-center
         .service-box
           %i.fa.fa-4x.fa-anchor.wow.bounceIn.text-primary
-          %h3 Hackspace, Event Venue & More
-          %p.text-muted.lead Dramatically bringing the intangable right to the heart of major cities around the world, with an onboard bitcoin cafe, hackerspace and global fairtrade tea delivery.
+          %h3 Sustainability
+          %p.text-muted.lead Less Than Zero Energy Impact, Communications & Movement
+          %br/
+          %p.text-muted.lead Innovate from Waste Materials in our Onboard Hackspace
+          %br/
+          %p.text-muted.lead Re-establish Long Forgotten Trade Routes based on Fairness and Equality
       .col-lg-3.col-md-6.text-center
         .service-box
-          %i.fa.fa-4x.fa-flag.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
-          %h3 Citizenship
-          %p.text-muted.lead Anyone can become a citizen, entitled to join us sailing, vote on the next destination and help out.
+          %i.fa.fa-4x.fa-lightbulb-o.wow.bounceIn.text-primary{"data-wow-delay" => ".1s", :style => "visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"}
+          %h3 Dreaming
+          %p.text-muted.lead Explore possibilities created by emergent technology
+          %br/
+          %p.text-muted.lead Inspire people to make the changes they can bring to the world - dream big
+          %br/
+          %p.text-muted.lead Allow people to experience what’s possible: every citizen has the opportunity to come aboard
       .col-lg-3.col-md-6.text-center
         .service-box
-          %i.fa.fa-4x.fa-arrows-alt.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
-          %h3 Decentralized Infrastructure
-          %p.text-muted.lead Pushing the boundaries of eco-friendly mobile technology, off grid power and decentralisation, we are building a community around blockchain based trustless descision making
+          %i.fa.fa-4x.fa-arrows-alt.wow.bounceIn.text-primary{"data-wow-delay" => ".2s", :style => "visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;"}
+          %h3 New Paths
+          %p.text-muted.lead Experiment with different organisation structures
+          %br/
+          %p.text-muted.lead Model DAO - see what’s possible, recyclable for other projects
+          %br/
+          %p.text-muted.lead 100% Transparency - Decisions, Finances, Collaboration - We believe in transparent organisation
       .col-lg-3.col-md-6.text-center
         .service-box
           %i.fa.fa-4x.fa-chevron-circle-right.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}

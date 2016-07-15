@@ -3,7 +3,7 @@
     .header-content-inner
       %h1.main-lead-text The Experimental Sailing Blockchain Hackspace
       %hr/
-      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Our Mission
+      %a.btn.btn-primary.page-scroll{:href => "#about"} Our Mission
 .visualization
   :javascript
     var width = $(".visualization").width()
@@ -126,7 +126,10 @@
 
         %hr.primary/
         %p.lead Community Hub, Hackspace, Event Venue & More
-        %p.lead Dramatically bringing the intangible right to the heart of major cities around the world, with an onboard bitcoin/ethereum cafe, hackerspace and global fairtrade goods delivery.
+        %p.lead
+          Dramatically bringing the intangible right to the heart of major
+          cities around the world, with an onboard bitcoin/ethereum cafe,
+          hackerspace and global fairtrade goods delivery.
         -# = link_to "become a citizen", crowdfund_path, class: "btn btn-default btn-xl"
 %section#map
   .container

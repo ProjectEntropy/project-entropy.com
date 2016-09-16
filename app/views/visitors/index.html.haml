@@ -1,43 +1,20 @@
 %header.homepage
   .header-content
     .header-content-inner
-      %h2.main-lead-text The Experimental Sailing Blockchain Hackspace
-      = image_tag "entropy_logo_text_white.png", height: '150px', class: 'pull-left'
--# 
--# %section#dashboard
--#   .container
--#     .row
--#       .col-lg-3
--#         .panel.panel-default
--#
--#           .panel-heading
--#             = image_tag "logo_1.gif", height: '150px', class: 'pull-left'
--#             %h3 Entropy Stats
--#           .panel-body
--#             %p
--#               %strong
--#                 Balance:
--#               38.197 Ether (0.0095%)
--#               .progress
--#                 .progress-bar{ style: "width: 2%" }
--#
--#             %p
--#               %strong
--#                 Citizens:
--#               3 / 4000
--#               .progress
--#                 .progress-bar.progress-bar-warning{ style: "width: 2%" }
--#
--#             %p
--#               %strong
--#                 Actions:
--#               0
--#
--#             %p
--#               %strong
--#                 Status:
--#               %pre
--#                 Pre-launch
+      .row
+        .col-lg-7
+          = image_tag "entropy_logo_text_white.png", class: 'img-responsive background-logo'
+        .col-lg-5.bottom-align-text
+          %h3.logo-tagline.main-lead-text.text-left The Experimental Sailing Blockchain Hackspace
+
+    .banner-left.col-lg-7
+      .row
+        .col-lg-8.col-lg-offset-3.text-right
+          %p.lead Entropy is the worlds first floating hackspace, blockchain controlled sailing vessel and global community.
+
+
+
+
 
 %section#about.bg-primary
   .container
@@ -45,7 +22,6 @@
       .col-lg-8.col-lg-offset-2.text-center
         %h2.section-heading Our Mission
         %hr.light/
-        %p.lead Entropy is the worlds first floating hackspace, blockchain controlled sailing vessel and global community.
         %p.lead.text-faded
           We have a shared passion for the emerging decentralised movement and are embarking on a global voyage to explore how new technology can be used to create a more equal and sustainable society for all.
       .col-lg-8.col-lg-offset-2.text-center
@@ -59,6 +35,37 @@
           cities around the world, with an onboard bitcoin/ethereum cafe,
           hackerspace and global fairtrade goods delivery.
         -# = link_to "become a citizen", crowdfund_path, class: "btn btn-default btn-xl"
+
+    -# .col-lg-3
+    -#   .panel.panel-default
+    -#
+    -#     .panel-heading
+    -#       %h3.panel-title Entropy Stats
+    -#     .panel-body
+    -#       %p
+    -#         %strong
+    -#           Balance:
+    -#         38.197 Ether (0.0095%)
+    -#         .progress
+    -#           .progress-bar{ style: "width: 2%" }
+    -#
+    -#       %p
+    -#         %strong
+    -#           Citizens:
+    -#         3 / 4000
+    -#         .progress
+    -#           .progress-bar.progress-bar-warning{ style: "width: 2%" }
+    -#
+    -#       %p
+    -#         %strong
+    -#           Actions:
+    -#         0
+    -#
+    -#       %p
+    -#         %strong
+    -#           Status:
+    -#         %pre
+    -#           Pre-launch
 %section#map
   .container
     .row

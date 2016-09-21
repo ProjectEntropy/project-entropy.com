@@ -45,6 +45,48 @@
   margin-right: 3.5em;
 }
 
+@media (min-width: 992px)
+{
+  .status
+  {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.status
+{
+  width: 100%;
+  color: white;
+
+  .stats-panel
+  {
+    min-height: 10em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: 5em 50%;
+  }
+
+  .fund_stats
+  {
+    background-color: #015185;
+    background-image: url(<%= image_url 'ethereum_logo.png' %>);
+  }
+  .citizen_stats
+  {
+    background-color: rgb(218, 123, 54);
+  }
+  .action_stats
+  {
+    background-color: #E88C0C;
+  }
+  .project_status
+  {
+    background-color: #710CE8;
+  }
+}
+
 
 @media (min-width: 768px ) {
   .row {

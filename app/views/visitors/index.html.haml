@@ -3,14 +3,14 @@
     .header-content-inner
       .row
         .col-lg-7
-          = image_tag "entropy_logo_text_white.png", class: 'img-responsive background-logo'
+          = image_tag "entropy_logo_text_white.png", class: 'img-responsive'
         .col-lg-5.bottom-align-text
           %h3.logo-tagline.main-lead-text.text-left The Experimental Sailing Blockchain Hackspace
 
     .banner-left.col-lg-7
       .row
         .col-lg-8.col-lg-offset-3.text-right
-          %p.lead Entropy is the worlds first floating hackspace, blockchain controlled sailing vessel and global community.
+          %p.lead.right-space Entropy is the worlds first floating hackspace, blockchain controlled sailing vessel and global community.
 
 
 
@@ -76,8 +76,7 @@
         %p.lead Anyone can become a Citizen, all citizens share equal control over where Entropy goes, it's purpose and what the community is aiming for. This is the first dApp controlled vessel and an experimental new model for a charity.
     .row
       .col-lg-12.text-center
-        = link_to page_path('map') do
-          = image_tag 'worldmap_1.png', class: "img-responsive wow fadeIn"
+        = image_tag 'worldmap_1.png', class: "img-responsive wow fadeIn"
 
         %h2.section-heading Route
         %hr.primary/
@@ -179,6 +178,20 @@
             %i.fa.fa-linkedin
           %a{:href => "https://twitter.com/HelenaTeichrib"}
             %i.fa.fa-twitter
+
+
+      .col-lg-3.text-center.wow.fadeIn
+        = image_tag "lucas_1.jpg", class: "img-responsive profile_pic"
+        %p Lucas Tauil De Freitas
+        %p.text-muted Skipper, Journalist & Community Weaver
+        %p
+          %a{:href => "mailto:lucasexpresso@gmail.com"}
+            %i.fa.fa-envelope-o
+          %a{:href => "https://nz.linkedin.com/in/lucas-tauil-de-freitas-a46b5826"}
+            %i.fa.fa-linkedin
+          %a{:href => "https://twitter.com/tauil_lucas"}
+            %i.fa.fa-twitter
+
 
       .col-lg-3.text-center.wow.fadeIn
         = image_tag "anne_2.png", class: "img-responsive profile_pic"

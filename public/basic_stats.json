@@ -1,0 +1,21 @@
+{
+  "funds":
+  {
+    "available":132,
+    "raising":300
+  },
+  "citizens":
+  {
+    "total":3,
+    "limit":300
+  },
+  "actions":
+  {
+    "total": 15,
+    "active": 15
+  },
+  "status":
+  {
+    "wave": 0
+  }
+}

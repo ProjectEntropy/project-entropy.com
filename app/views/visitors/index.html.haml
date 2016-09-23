@@ -22,22 +22,25 @@
         %h2.stat
           %strong 132
           \/ 300
-          %span.text-muted Ether (44%)
+          %span.text-muted Ether
+        .progress
+          .progress-bar.progress-bar-warning{ style: "width: 44%" }
+
       .col-sm-3.stats-panel.citizen_stats
         %h3 Citizens
         %h2.stat
-          %strong 3
+          %strong --
           \/ 300
+        .progress
+          .progress-bar{ style: "width: 1%" }
+
       .col-sm-3.stats-panel.action_stats
         %h3 Active Actions
         %h2.stat
-          %strong 15
-          ( 300 Ether )
-
+          %strong --
       .col-sm-3.stats-panel.project_status
         %h3 Status
         %h2.stat
-          Wave 0
           %strong alpha
 
 %section#about.bg-primary
@@ -187,7 +190,7 @@
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Who we are
+        %h2.section-heading Guardians
         %hr.primary/
         %p We're an enthusiastic and friendly group of technologists, creatives, environmentalists and dreamers
     .row

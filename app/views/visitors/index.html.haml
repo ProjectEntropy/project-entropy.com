@@ -3,7 +3,7 @@
     .header-content-inner
       .row
         .col-lg-7
-          = image_tag "entropy_logo_text_white.png", class: 'img-responsive'
+          = image_tag "entropy_logo_text_white.png", class: 'main-logo img-responsive'
         .col-lg-5.bottom-align-text
           %h3.logo-tagline.main-lead-text.text-left The Experimental Sailing Blockchain Micronation
 
@@ -42,22 +42,53 @@
         %h2.stat
           %strong alpha
 -#
--# %section
+-# %section.no-padding
 -#   .container-fluid
--#     .row
--#       .col-sm-3.stats-panel.fund_stats
--#         %h3.text-center
--#           Ξ1 Ether
--#           %hr
--#           %span.bigger ⊛
--#           1 Entropy
+-#     .row.no-gutter
+-#       .col-lg-3.col-sm-4
+-#         .portfolio-box-caption
+-#           .portfolio-box-caption-content
+-#             .project-category.text-faded
+-#               Crew with us
+-#             .project-name
+-#               Help crew the boats in the Entropy fleet as it sails around the
+-#               world
 -#
--#       .col-sm-3.stats-panel.citizen_stats
+-#       .col-lg-3.col-sm-3
+-#         %a.portfolio-box{:href => "#"}
+-#           = image_tag "spinnaker.jpg", class: "img-responsive"
+-#           .portfolio-box-caption
+-#             .portfolio-box-caption-content
+-#               .project-category.text-faded
+-#                 Incubator
+-#               .project-name
+-#                 Citizens can submit ideas to our onboard incubator, for the chance
+-#                 not only to build their projects onboard but get seed funding
+-#       .col-lg-3.col-sm-3
+-#         %a.portfolio-box{:href => "#"}
+-#           = image_tag "sails-3.jpg", class: "img-responsive"
 -#
--#       .col-sm-3.stats-panel.action_stats
+-#           .portfolio-box-caption
+-#             .portfolio-box-caption-content
+-#               .project-category.text-faded
+-#                 Events
+-#               .project-name
+-#                 Cinema nights, beach parties and hack sessions all around the
+-#                 world
 -#
--#       .col-sm-3.stats-panel.project_status
+-#       .col-lg-3.col-sm-3
+-#         %a.portfolio-box{:href => "#"}
+-#           = image_tag "sails-3.jpg", class: "img-responsive"
 -#
+-#           .portfolio-box-caption
+-#             .portfolio-box-caption-content
+-#               .project-category.text-faded
+-#                 Events
+-#               .project-name
+-#                 Cinema nights, beach parties and hack sessions all around the
+-#                 world
+-#
+
 
 %section#about.bg-primary
   .container
@@ -74,11 +105,11 @@
         %h2.section-heading Decentralized, OpenSource Freedom
 
         %hr.primary/
-        %p.lead Community Hub, Hackspace, Event Venue
+        %p.lead Community Hub | Hackspace | Blockchain Incubator
         %p.lead
           Dramatically bringing the intangible right to the heart of major
           cities around the world, with an onboard crypto cafe, incubator,
-          hackerspace and global fairtrade goods delivery.
+          hackspace and global fairtrade goods delivery.
 
 %section#map
   .container
@@ -128,7 +159,7 @@
       .col-lg-3.col-md-6
         .service-box
           .text-center
-            %i.fa.fa-4x.fa-anchor.wow.bounceIn.text-primary
+            %i.fa.fa-4x.fa-leaf.wow.bounceIn.text-primary
             %h3 Sustainability
           %ul
             %li.text-muted.lead Less Than Zero Energy Impact, Communications & Movement

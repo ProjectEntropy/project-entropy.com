@@ -13,6 +13,8 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'rails'
 gem 'sass-rails'
 
+gem 'google-webfonts-rails'
+
 # JS assets
 gem 'fittextjs_rails'
 

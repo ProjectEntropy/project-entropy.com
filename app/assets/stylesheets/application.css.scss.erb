@@ -23,6 +23,39 @@
   border: none;
 }
 
+.bigger
+{
+  font-size: 1.9em;
+  font-family: Roboto;
+  font-weight: bolder;
+}
+
+.alpha
+{
+  background-image: url(<%= image_url 'warm_orange_sailing.jpg' %>);
+  background-position: top right;
+}
+
+
+.beta
+{
+  background-image: url(<%= image_url 'sails_up.jpg' %>);
+  background-position: right;
+}
+
+.secondary
+{
+  min-height: 75%;
+
+  h1
+  {
+    font-family: "Raleway";
+    font-weight: bolder;
+    font-size: 3em;
+  }
+
+}
+
 .banner-left:after
 {
   content: '';
@@ -44,7 +77,7 @@
 {
   margin-right: 3.5em;
 }
-// 
+//
 // @media (min-width: 992px)
 // {
 //   .status
@@ -54,6 +87,16 @@
 //   }
 // }
 
+
+.portfolio-box
+{
+  overflow: hidden;
+}
+
+.project-image
+{
+  width: 100%;
+}
 
 .status
 {
@@ -171,6 +214,9 @@ header .header-content
 .main-lead-text
 {
   padding: 0.3em;
+  font-family: "Raleway";
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .main-logo

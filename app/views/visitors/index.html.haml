@@ -7,41 +7,31 @@
       .col-lg-10.bottom-align-text
         %h1.main-lead-text.text-left.bigger The Earth's Blockchain Fleet
 
-    -# .banner-left.col-lg-7
-    -#   .row
-    -#     .col-lg-8.col-lg-offset-3.text-right
-    -#       %p.lead.right-space
-    -#         Entropy is the worlds first DAO controlled
-    -#         %br
-    -#         fleet of sailing hackspaces.
 
--# %stats.status
--#   .container-fluid
--#     .row
--#       .col-sm-3.stats-panel.fund_stats
--#         %h3 Funds
--#         %h2.stat
--#           %strong 132
--#           %span.text-muted Ether
--#         .progress
--#           .progress-bar.progress-bar-warning{ style: "width: 2%" }
--#
--#       .col-sm-3.stats-panel.citizen_stats
--#         %h3 Citizens
--#         %h2.stat
--#           %strong --
--#         .progress
--#           .progress-bar{ style: "width: 2%" }
--#
--#       .col-sm-3.stats-panel.action_stats
--#         %h3 Active Actions
--#         %h2.stat
--#           %strong --
--#       .col-sm-3.stats-panel.project_status
--#         %h3 Status
--#         %h2.stat
--#           %strong alpha
--#
+  .banner-stats.col-md-6
+    .row
+      .col-xs-3
+        %h1 02
+        %h4 Days
+      .col-xs-3
+        %h1 05
+        %h4 Hours
+      .col-xs-3
+        %h1 21
+        %h4 Minutes
+      .col-xs-3
+        %h1 31
+        %h4 Seconds
+    .row
+      .col-sm-6.text-left
+        %h3 1326 / 4000 Citizens
+      .col-sm-6.text-right
+        %h3 9783 Ether
+    .row
+      .col-sm-12
+        .progress-container
+          .progressbar{ style: "width: 20%" }
+            20%
 
 
 %header.secondary.alpha.text-right
@@ -59,7 +49,7 @@
 
     .row
       .col-sm-7.col-sm-offset-5
-        %p.lead.bigger
+        %p.lead
           Project Entropy is a decentralised autonomous organisation with a
           global community at its heart. We want to tell the story of the boat
           without a captain - the fleet with true democracy.
@@ -68,6 +58,9 @@
   .container
     .row
       .col-sm-2
+        %br
+        %br
+
         = image_tag "icons500pxincubator.png", class: 'img-responsive section-icon pull-right'
 
 
@@ -79,11 +72,11 @@
 
     .row
       .col-sm-7
-        %p.lead.bigger
+        %p.lead
           Space aboard is set aside for building whatever you choose.
-        %p.lead.bigger
+
           5% of all grown projects go towards keeping the fleet sailing.
-        %p.lead.bigger
+        %p.lead
           Open source is always free.
 
 
@@ -95,244 +88,6 @@
         %br
         %h1
           BECOME A PART OF ENTROPY
-
--#
--# %section.no-padding
--#   .container-fluid
--#     .row.no-gutter
--#       .col-lg-3.col-sm-3
--#         %a.portfolio-box{:href => "#"}
--#           = image_tag "Token_GetName.png", class: "img-responsive"
--#           .portfolio-box-caption
--#             .portfolio-box-caption-content
--#               .project-category.text-faded
--#                 Join
--#               .project-description
--#                 Have your name written on the boat, among all other citizens
--#       .col-lg-3.col-sm-3
--#         %a.portfolio-box{:href => "#"}
--#           = image_tag "Token_ComeAboard.png", class: "img-responsive"
--#
--#           .portfolio-box-caption
--#             .portfolio-box-caption-content
--#               .project-category.text-faded
--#                 Crew
--#               .project-description
--#                 Come aboard and help sail the boats in the Entropy fleet around the
--#                 world
--#
--#
--#       .col-lg-3.col-sm-3
--#         %a.portfolio-box{:href => "#"}
--#           = image_tag "Token_Incubator.png", class: "img-responsive"
--#           .portfolio-box-caption
--#             .portfolio-box-caption-content
--#               .project-category.text-faded
--#                 Incubate
--#               .project-description
--#                 Float ideas to the onboard incubator, grow projects onboard
--#
--#
--#       .col-lg-3.col-sm-3
--#         %a.portfolio-box{:href => "#"}
--#           = image_tag "Token_Route.png", class: "img-responsive"
--#
--#           .portfolio-box-caption
--#             .portfolio-box-caption-content
--#               .project-category.text-faded
--#                 Steer
--#               .project-description
--#                 Direct the fleet, suggest where we go and what we do there
--#
-
--#
--# %section#about.bg-primary
--#   .container
--#     .row
--#       .col-lg-8.col-lg-offset-2.text-center
--#         %h2.section-heading Mission
--#         %hr.light/
--#         %p.lead.text-faded
--#           We have a shared passion for the emerging decentralised movement and
--#           are embarking on a global voyage to explore how new technology can be
--#           used to create a more equal and sustainable society for all.
--#       .col-lg-8.col-lg-offset-2.text-center
--#         %hr.light/
--#         %h2.section-heading Decentralized, OpenSource Freedom
--#
--#         %hr.primary/
--#         %p.lead Community Hub | Hackspace | Blockchain Incubator
--#         %p.lead
--#           Dramatically bringing the intangible right to the heart of major
--#           cities around the world, with an onboard crypto cafe, incubator,
--#           hackspace and global fairtrade goods delivery.
--#
--# %section#map
--#   .container
--#     .row
--#       .col-lg-12.text-center
--#         %h2.section-heading The Entropy DAO
--#         %hr.primary/
--#         = image_tag 'entropyDappDesc.png', class: "img-responsive wow fadeIn"
--#         %p.lead
--#           Anyone can become part of Entropy, all citizens share equal
--#           control over where Entropy goes, it's purpose and what the community
--#           is aiming for. As the project grows, we can support more vessels in
--#           the fleet.
--#     %hr
--#     .row
--#       .col-lg-12.text-center
--#         = image_tag 'world_map_2.png', class: "img-responsive wow fadeIn"
--#
--#         %br
--#         %h2.section-heading Route
--#         %hr.primary/
--#         %p.lead
--#           The Entropy Fleet steadily heads West on a schedule directed and voted
--#           for by the community, avoiding storm seasons while harnessing the
--#           natural trade winds.
--#         %p.lead
--#           The community decides the next port of call and what happens there -
--#           be it an Ethereum Beach Party, rebuilding a disaster struck region or
--#           a cinema night projected onto the sail.
--#
--# %section#services
--#   .container
--#     .row
--#       .col-lg-12.text-center
--#         %h2.section-heading Goals
--#         %hr.primary/
--#       .col-lg-8.col-lg-offset-2.text-center
--#         %p.lead
--#           The following objectives define the initial purpose of the project,
--#           but as the community grows these may be extended, added to, removed or
--#           changed by Entropy holders.
--#         %p.lead
--#           Anyone can join the community with not only a say in what is done and
--#           where it goes, but they can volunteer to help sail there.
--#   .container
--#     .row
--#       .col-lg-3.col-md-6
--#         .service-box
--#           .text-center
--#             %i.fa.fa-4x.fa-leaf.wow.bounceIn.text-primary
--#             %h3 Sustainability
--#           %ul
--#             %li.text-muted.lead Less Than Zero Energy Impact, Communications & Movement
--#             %li.text-muted.lead Innovate from Waste Materials in the Onboard Hackspace
--#             %li.text-muted.lead Re-establish Long Forgotten Trade Routes based on Fairness and Equality
--#       .col-lg-3.col-md-6
--#         .service-box
--#           .text-center
--#             %i.fa.fa-4x.fa-lightbulb-o.wow.bounceIn.text-primary{"data-wow-delay" => ".1s", :style => "visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"}
--#             %h3 Dreaming
--#           %ul
--#             %li.text-muted.lead Explore possibilities created by emergent technology
--#             %li.text-muted.lead Inspire people to make the changes they can bring to the world - dream big
--#             %li.text-muted.lead Allow people to experience what’s possible: every citizen has the opportunity to come aboard
--#       .col-lg-3.col-md-6
--#         .service-box
--#           .text-center
--#             %i.fa.fa-4x.fa-arrows-alt.wow.bounceIn.text-primary{"data-wow-delay" => ".2s", :style => "visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;"}
--#             %h3 New Paths
--#
--#           %ul
--#             %li.text-muted.lead Experiment with different organisation structures
--#             %li.text-muted.lead Model DAO - see what’s possible, recyclable for other projects
--#             %li.text-muted.lead 100% Transparency - Decisions, Finances, Collaboration - We believe in transparent organisation
--#       .col-lg-3.col-md-6
--#         .service-box
--#           .text-center
--#             %i.fa.fa-4x.fa-chevron-circle-right.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
--#             %h3 Just the Beginning
--#           %p.text-muted.lead Entropy is part of an emerging fleet, heading under full sail into the unknown of the new world
--# %section#portfolio.no-padding
--#   .container-fluid
--#     .row.no-gutter
--#       .col-lg-4.col-sm-4
--#         .portfolio-box
--#           = image_tag "sails_up.jpg", class: "img-responsive project-image"
--#           .portfolio-box-caption
--#             .portfolio-box-caption-content
--#               .project-category.text-faded
--#                 The Boat
--#               .project-description
--#                 Quiet, Relaxed, EcoFriendly, Entropy 01 is large enough to host events and comfortable enough to travel on aroud the world.
--#
--#       .col-lg-4.col-sm-4
--#         .portfolio-box
--#           = image_tag "makerspace_1.jpg", class: "img-responsive project-image"
--#           .portfolio-box-caption
--#             .portfolio-box-caption-content
--#               .project-category.text-faded
--#                 Hackspace
--#               .project-description
--#                 Full onboard workshop, 3d Printing, IoT components, everything you need to learn and experiment with blockchain together with plenty of fresh coffee
--#       .col-lg-4.col-sm-4
--#         .portfolio-box
--#           = image_tag "decentralised.png", class: "img-responsive project-image"
--#
--#           .portfolio-box-caption
--#             .portfolio-box-caption-content
--#               .project-category.text-faded
--#                 Decentralised
--#               .project-description
--#                 Funding, planning and running Entropy is pushing the boundaries of what an organisation can be, building Open Source projects to help others follow the same path
--#
--# %section#team
--#   .container
--#     .row
--#       .col-lg-8.col-lg-offset-2.text-center
--#         %h2.section-heading Guardians
--#         %hr.primary/
--#         %p We're an enthusiastic and friendly group of technologists, creatives, environmentalists and dreamers
--#     .row
--#       .col-lg-3.text-center.wow.fadeIn
--#         = image_tag "helena_1.jpg", class: "img-responsive profile_pic"
--#         %p Helena Teichrib
--#         %p
--#           %a{:href => "mailto:helena.rib@project-entropy.com"}
--#             %i.fa.fa-envelope-o
--#           %a{:href => "https://www.linkedin.com/in/helena-teichrib-83246065/en"}
--#             %i.fa.fa-linkedin
--#           %a{:href => "https://twitter.com/HelenaTeichrib"}
--#             %i.fa.fa-twitter
--#
--#
--#       .col-lg-3.text-center.wow.fadeIn
--#         = image_tag "lucas_1.jpg", class: "img-responsive profile_pic"
--#         %p Lucas Tauil De Freitas
--#         %p
--#           %a{:href => "mailto:lucasexpresso@gmail.com"}
--#             %i.fa.fa-envelope-o
--#           %a{:href => "https://nz.linkedin.com/in/lucas-tauil-de-freitas-a46b5826"}
--#             %i.fa.fa-linkedin
--#           %a{:href => "https://twitter.com/tauil_lucas"}
--#             %i.fa.fa-twitter
--#
--#
--#       .col-lg-3.text-center.wow.fadeIn
--#         = image_tag "anne_2.png", class: "img-responsive profile_pic"
--#         %p Anne Schön
--#         %p
--#           %a{:href => "mailto:schoen.anne@online.de"}
--#             %i.fa.fa-envelope-o
--#
--#
--#       .col-lg-3.text-center.wow.fadeIn
--#         = image_tag "joran_rain.png", class: "img-responsive profile_pic"
--#         %p Joran Kikke
--#         %p
--#           %a{:href => "mailto:joran.k@project-entropy.com"}
--#             %i.fa.fa-envelope-o
--#           %a{:href => "https://nz.linkedin.com/in/jỏ͕̉r͕̻͕̉̉̉ả̻͕̉n-kikke-0b08065"}
--#             %i.fa.fa-linkedin
--#           %a{:href => "https://twitter.com/donkeyscience"}
--#             %i.fa.fa-twitter
--#
--#       .col-lg-3.text-center
--#
--#       .col-lg-3.text-center
 
 %section#contact
   .container

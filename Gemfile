@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.3.2'
 
 
 # Assets
@@ -27,8 +27,8 @@ gem 'rest-client'
 # Cache
 gem 'dalli'
 
-# Bitcoin units
-gem 'satoshi-unit'
+gem "browserify-rails"
+ gem 'react-rails', '~> 1.0'
 
 # Coinprism Colored Coins API
 gem 'coinprism'

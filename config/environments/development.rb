@@ -36,4 +36,10 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Should the node_modules directory be evaluated for changes on page load
+  #
+  # The default is `false`
+  config.browserify_rails.evaluate_node_modules = true
+
 end

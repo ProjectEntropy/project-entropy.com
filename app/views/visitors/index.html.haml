@@ -11,16 +11,16 @@
   .banner-stats.col-md-6
     .row
       .col-xs-3
-        %h1 02
+        %h1#days --
         %h4 Days
       .col-xs-3
-        %h1 05
+        %h1#hours --
         %h4 Hours
       .col-xs-3
-        %h1 21
+        %h1#minutes --
         %h4 Minutes
       .col-xs-3
-        %h1 31
+        %h1#seconds --
         %h4 Seconds
     .row
       .col-sm-6.text-left
@@ -33,6 +33,9 @@
           .progressbar{ style: "width: 20%" }
             20%
 
+
+:javascript
+  
 
 %header.secondary.alpha.text-right
   .container

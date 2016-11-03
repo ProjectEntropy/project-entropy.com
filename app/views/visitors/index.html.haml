@@ -24,14 +24,14 @@
         %h4 Seconds
     .row
       .col-sm-6.text-left
-        %h3 1326 / 4000 Citizens
+        %h3 5 Citizens
       .col-sm-6.text-right
-        %h3 9783 Ether
+        %h3 125 Ether
     .row
       .col-sm-12
         .progress-container
-          .progressbar{ style: "width: 20%" }
-            20%
+          .progressbar{ style: "width: 2%; min-width: 27px;" }
+            2%
 
 
 
@@ -47,9 +47,12 @@
     .row
       .col-sm-7.col-sm-offset-5
         %p.lead
-          As a world's first, Project Entropy builds the bridge between the blockchain and the real world.
+          We're establishing a crowd-owned and community steered fleet of sailing
+          hackspaces around the world -
         %p.lead
-          We want to make blockchain tangable and accessible!
+          anyone can be part of our global community and
+          anyone can volunteer to help us sail
+
 
 -# birdrow_blue.jpg
 %header.secondary.community.text-left
@@ -66,27 +69,26 @@
         %p.lead
           With an entropy token you be part of
           our community that suggests and
-          votes on everything Project Entropy
-          will be up to!
+          votes on everything the fleet is aiming for
 
-%header.secondary.beta.text-left
+%header.secondary.beta
   .container
     .row
 
-      .col-lg-5
+      .col-lg-5.col-sm-offset-7.text-right
         %br
         %br
         %h1
-          Incubator
+          Growing projects aboard
 
     .row
-      .col-sm-7
+      .col-sm-7.col-sm-offset-5.text-right
         %p.lead
           Have an idea? Space aboard is set aside for building whatever you choose.
         %p.lead
           5% of all grown commerical projects go towards keeping the fleet sailing.
         %p.lead
-          Open source is always free forever.
+          Open source is always free - forever.
 
 %header.secondary.map.text-left
   .container
@@ -116,16 +118,117 @@
         %br
         %h1
           help us get afloat
-          & get real rewards
 
     .row
       .col-sm-7
         %p.lead
-          We sell Entropy Tokens that give you the
-          ability to become part of our community 
+          Entropy Citizenship Tokens give you the
+          ability to become part of our community
+    .row.no-gutter{style: "padding-top: 25em"}
+      .col-lg-3.col-sm-3
+        .portfolio-box{:href => "#"}
+          = image_tag "Token_GetName.png", class: "img-responsive"
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Join
+              .project-description
+                Have your name written on the boat, among all other citizens
+      .col-lg-3.col-sm-3
+        .portfolio-box{:href => "#"}
+          = image_tag "Token_ComeAboard.png", class: "img-responsive"
+
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Crew
+              .project-description
+                Come aboard and help sail the boats in the Entropy fleet around the
+                world
+
+
+      .col-lg-3.col-sm-3
+        .portfolio-box{:href => "#"}
+          = image_tag "Token_Incubator.png", class: "img-responsive"
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Incubate
+              .project-description
+                Float ideas to the onboard incubator, grow projects onboard
+
+
+      .col-lg-3.col-sm-3
+        .portfolio-box{:href => "#"}
+          = image_tag "Token_Route.png", class: "img-responsive"
+
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Steer
+              .project-description
+                Direct the fleet, suggest where we go and what we do there
 
 
 
+%section.no-padding
+  .container-fluid
+
+
+%section#team
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
+        %h2.section-heading Guardians
+        %hr.primary/
+        %p We're an enthusiastic and friendly group of technologists, creatives, environmentalists and dreamers
+    .row
+      .col-lg-3.text-center.wow.fadeIn
+        = image_tag "helena_1.jpg", class: "img-responsive profile_pic"
+        %p Helena Teichrib
+        %p
+          %a{:href => "mailto:helena.rib@project-entropy.com"}
+            %i.fa.fa-envelope-o
+          %a{:href => "https://www.linkedin.com/in/helena-teichrib-83246065/en"}
+            %i.fa.fa-linkedin
+          %a{:href => "https://twitter.com/HelenaTeichrib"}
+            %i.fa.fa-twitter
+
+
+      .col-lg-3.text-center.wow.fadeIn
+        = image_tag "lucas_1.jpg", class: "img-responsive profile_pic"
+        %p Lucas Tauil De Freitas
+        %p
+          %a{:href => "mailto:lucasexpresso@gmail.com"}
+            %i.fa.fa-envelope-o
+          %a{:href => "https://nz.linkedin.com/in/lucas-tauil-de-freitas-a46b5826"}
+            %i.fa.fa-linkedin
+          %a{:href => "https://twitter.com/tauil_lucas"}
+            %i.fa.fa-twitter
+
+
+      .col-lg-3.text-center.wow.fadeIn
+        = image_tag "anne_2.png", class: "img-responsive profile_pic"
+        %p Anne Schön
+        %p
+          %a{:href => "mailto:schoen.anne@online.de"}
+            %i.fa.fa-envelope-o
+
+
+      .col-lg-3.text-center.wow.fadeIn
+        = image_tag "joran_rain.png", class: "img-responsive profile_pic"
+        %p Joran Kikke
+        %p
+          %a{:href => "mailto:joran.k@project-entropy.com"}
+            %i.fa.fa-envelope-o
+          %a{:href => "https://nz.linkedin.com/in/jỏ͕̉r͕̻͕̉̉̉ả̻͕̉n-kikke-0b08065"}
+            %i.fa.fa-linkedin
+          %a{:href => "https://twitter.com/donkeyscience"}
+            %i.fa.fa-twitter
+
+      .col-lg-3.text-center
+
+      .col-lg-3.text-center
 
 %section#contact
   .container

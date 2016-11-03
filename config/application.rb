@@ -24,7 +24,7 @@ module Bitboat
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.browserify_rails.source_map_environments << "development"
+    # config.browserify_rails.source_map_environments << "development"
 
 
     config.middleware.insert_before 0, "Rack::Cors", :debug => true, :logger => (-> { Rails.logger }) do

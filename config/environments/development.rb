@@ -40,6 +40,6 @@ Rails.application.configure do
   # Should the node_modules directory be evaluated for changes on page load
   #
   # The default is `false`
-  config.browserify_rails.evaluate_node_modules = true
+  # config.browserify_rails.evaluate_node_modules = true
 
 end

@@ -27,11 +27,11 @@ gem 'rest-client'
 # Cache
 gem 'dalli'
 
-gem "browserify-rails"
- gem 'react-rails', '~> 1.0'
+# gem "browserify-rails"
+# gem 'react-rails', '~> 1.0'
 
 # Coinprism Colored Coins API
-gem 'coinprism'
+# gem 'coinprism'
 
 gem 'asset_sync'
 gem 'uglifier'
@@ -44,7 +44,7 @@ gem 'spring',  group: :development
 
 gem 'haml-rails'
 gem 'high_voltage'
-gem 'pg'
+# gem 'pg'
 gem 'simple_form'
 
 group :development, :test do

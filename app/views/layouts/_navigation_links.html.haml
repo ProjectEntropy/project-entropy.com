@@ -1,10 +1,11 @@
 #bs-example-navbar-collapse-1.collapse.navbar-collapse.main-navbar
   %ul.nav.navbar-nav.navbar-right
     %li
+      = link_to page_path('community') do
+        Community
+    %li
       = link_to page_path('news') do
-        %i.fa.fa-rss
         Log
     %li
       = link_to page_path('citizen') do
-        %i.fa.fa-flag-o
         Citizenship

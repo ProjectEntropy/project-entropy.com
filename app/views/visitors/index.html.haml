@@ -113,18 +113,22 @@
 %header.secondary.afloat.text-left
   .container
     .row
-      .col-lg-5
+      .col-lg-5.col-sm-offset-7.text-right
         %br
         %br
         %h1
           help us get afloat
 
     .row
-      .col-sm-7
+      .col-sm-7.col-sm-offset-5.text-right
         %p.lead
           Entropy Citizenship Tokens give you the
           ability to become part of our community
-    .row.no-gutter{style: "padding-top: 25em"}
+
+
+%section.no-padding
+  .container-fluid
+    .row.no-gutter
       .col-lg-3.col-sm-3
         .portfolio-box{:href => "#"}
           = image_tag "Token_GetName.png", class: "img-responsive"
@@ -181,11 +185,12 @@
       .col-lg-8.col-lg-offset-2.text-center
         %h2.section-heading Guardians
         %hr.primary/
-        %p We're an enthusiastic and friendly group of technologists, creatives, environmentalists and dreamers
+        %p.lead We're an enthusiastic and friendly group of technologists, creatives, environmentalists and dreamers
     .row
-      .col-lg-3.text-center.wow.fadeIn
+      .col-sm-2.text-center.wow.fadeIn
         = image_tag "helena_1.jpg", class: "img-responsive profile_pic"
-        %p Helena Teichrib
+        %p.lead Helena Teichrib
+        %p Creative Designer & BioHacker keen to change the world
         %p
           %a{:href => "mailto:helena.rib@project-entropy.com"}
             %i.fa.fa-envelope-o
@@ -195,9 +200,10 @@
             %i.fa.fa-twitter
 
 
-      .col-lg-3.text-center.wow.fadeIn
+      .col-sm-2.text-center.wow.fadeIn
         = image_tag "lucas_1.jpg", class: "img-responsive profile_pic"
-        %p Lucas Tauil De Freitas
+        %p.lead Lucas Tauil De Freitas
+        %p Weaver, journalist and group interaction specialist with 15 years experience circumnavigating
         %p
           %a{:href => "mailto:lucasexpresso@gmail.com"}
             %i.fa.fa-envelope-o
@@ -207,17 +213,19 @@
             %i.fa.fa-twitter
 
 
-      .col-lg-3.text-center.wow.fadeIn
+      .col-sm-2.text-center.wow.fadeIn
         = image_tag "anne_2.png", class: "img-responsive profile_pic"
-        %p Anne Schön
+        %p.lead Anne Schön
+        %p Community process designer
         %p
           %a{:href => "mailto:schoen.anne@online.de"}
             %i.fa.fa-envelope-o
 
 
-      .col-lg-3.text-center.wow.fadeIn
+      .col-sm-2.text-center.wow.fadeIn
         = image_tag "joran_rain.png", class: "img-responsive profile_pic"
-        %p Joran Kikke
+        %p.lead Joran Kikke
+        %p Technology architect, maker, mild anarchist and civilization skeptic
         %p
           %a{:href => "mailto:joran.k@project-entropy.com"}
             %i.fa.fa-envelope-o
@@ -226,9 +234,18 @@
           %a{:href => "https://twitter.com/donkeyscience"}
             %i.fa.fa-twitter
 
-      .col-lg-3.text-center
+      .col-sm-2.text-center.wow.fadeIn
+        = image_tag "kian_1.jpg", class: "img-responsive profile_pic"
+        %p.lead Kian Mehrabi
+        %p Teacher and Freelance Thinker
+        %p
+          %a{:href => "mailto:kiamo.m@gmail.com"}
+            %i.fa.fa-envelope-o
+          %a{:href => "https://www.linkedin.com/in/kianmehrabi"}
+            %i.fa.fa-linkedin
+          %a{:href => "https://twitter.com/thebeardninja"}
+            %i.fa.fa-twitter
 
-      .col-lg-3.text-center
 
 %section#contact
   .container

@@ -4,24 +4,24 @@
       .col-md-8.col-md-offset-1
         = image_tag "entropy_logo_text_white.png", class: 'main-logo img-responsive'
     .row
-      .col-lg-10.bottom-align-text
-        %h1.main-lead-text.text-left.bigger The World's Blockchain Fleet
+      .col-md-7.col-md-offset-3.text-right.banner-logo-tagline
+        %h1.main-lead-text.bigger.logo-tagline The World's Blockchain Fleet
 
 
   .banner-stats.col-md-6
-    .row
-      .col-xs-3
-        %h1#days --
-        %h4 Days
-      .col-xs-3
-        %h1#hours --
-        %h4 Hours
-      .col-xs-3
-        %h1#minutes --
-        %h4 Minutes
-      .col-xs-3
-        %h1#seconds --
-        %h4 Seconds
+    -# .row
+    -#   .col-xs-3
+    -#     %h1#days --
+    -#     %h4 Days
+    -#   .col-xs-3
+    -#     %h1#hours --
+    -#     %h4 Hours
+    -#   .col-xs-3
+    -#     %h1#minutes --
+    -#     %h4 Minutes
+    -#   .col-xs-3
+    -#     %h1#seconds --
+    -#     %h4 Seconds
     .row
       .col-sm-6.text-left
         %h3 5 Citizens
@@ -41,11 +41,11 @@
       .col-sm-5.col-sm-offset-7
         %br
         %br
-        %h1
+        %h1.text-uppercase
           Project Entropy is an Ethereum-powered floating experiment
 
     .row
-      .col-sm-7.col-sm-offset-5
+      .col-sm-7.col-sm-offset-5.text-box
         %p.lead
           We're establishing a crowd-owned and community steered fleet of sailing
           hackspaces around the world -
@@ -61,15 +61,25 @@
       .col-sm-7
         %br
         %br
-        %h1 with a global community
+        %h1.text-uppercase with a global community
 
 
     .row
-      .col-sm-7
+      .col-sm-7.text-box
         %p.lead
-          With an entropy token you be part of
-          our community that suggests and
+          With an entropy token you become part of
+          the community that suggests and
           votes on everything the fleet is aiming for
+
+    -# .banner-left.col-lg-7.text-box-white
+    -#   .row
+    -#     .col-lg-8.col-lg-offset-3.text-right
+    -#       %p.lead.right-space
+    -#         Entropy is the worlds first DAO controlled
+    -#         %br
+    -#         fleet of sailing hackspaces.
+    -#
+
 
 %header.secondary.beta
   .container
@@ -78,11 +88,11 @@
       .col-lg-5.col-sm-offset-7.text-right
         %br
         %br
-        %h1
+        %h1.text-uppercase
           Growing projects aboard
 
     .row
-      .col-sm-7.col-sm-offset-5.text-right
+      .col-sm-7.col-sm-offset-5.text-right.text-box
         %p.lead
           Have an idea? Space aboard is set aside for building whatever you choose.
         %p.lead
@@ -96,13 +106,13 @@
       .col-lg-5
         %br
         %br
-        %h1
+        %h1.text-uppercase
           you decide where we go
 
     .row
-      .col-sm-7
+      .col-sm-7.text-box-white
         %p.lead
-          Project Entropy will be a decentralised autonomous organisation with a global
+          Entropy is growing into a decentralised autonomous organisation with a global
           community at its heart.
 
         %p.lead
@@ -116,13 +126,13 @@
       .col-lg-5.col-sm-offset-7.text-right
         %br
         %br
-        %h1
+        %h1.text-uppercase
           help us get afloat
 
     .row
-      .col-sm-7.col-sm-offset-5.text-right
+      .col-sm-7.col-sm-offset-5.text-right.text-box
         %p.lead
-          Entropy Citizenship Tokens give you the
+          Citizenship Tokens give you the
           ability to become part of our community
 
 
@@ -179,7 +189,7 @@
   .container-fluid
 
 
-%section#team
+%section#guardians
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center

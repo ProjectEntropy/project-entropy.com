@@ -27,6 +27,8 @@ gem 'rest-client'
 # Cache
 gem 'dalli'
 
+gem 'inline_svg'
+
 # gem "browserify-rails"
 # gem 'react-rails', '~> 1.0'
 

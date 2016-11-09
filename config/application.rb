@@ -26,6 +26,8 @@ module Bitboat
 
     # config.browserify_rails.source_map_environments << "development"
 
+    # COMPRESS SHIZZLE
+    config.middleware.use Rack::Deflater
 
     config.middleware.insert_before 0, "Rack::Cors", :debug => true, :logger => (-> { Rails.logger }) do
       allow do

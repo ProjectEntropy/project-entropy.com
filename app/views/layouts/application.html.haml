@@ -6,9 +6,7 @@
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Entropy'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'
-    = javascript_include_tag '//d3js.org/d3.v3.min.js'
-    = javascript_include_tag '//d3js.org/topojson.v1.min.js'
-
+    
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
 
     = google_webfonts_init({google: ['Roboto', 'Raleway:400,700']})

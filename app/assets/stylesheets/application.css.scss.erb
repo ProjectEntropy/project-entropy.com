@@ -19,7 +19,7 @@
 
 #mainNav
 {
-  background-color: rgba(76, 76, 76, 0.59);
+  background-color: rgba(26, 45, 111, 0.6);
   border: none;
 }
 
@@ -56,7 +56,6 @@
 {
   background-image: url(<%= image_url 'world_map_2.png' %>);
   background-position: center;
-  color: black;
 }
 
 .afloat
@@ -74,7 +73,8 @@
   {
     font-family: "Raleway";
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 8vmin;
+
   }
 
 }
@@ -214,9 +214,20 @@
 
 .text-box
 {
-  background-color: rgba(26,45,111,0.3);
+  background-color: rgba(26,45,111,0.5);
   padding: 1em;
-  mix-blend-mode: luminosity;
+}
+
+.text-box-red
+{
+  background-color: rgba(194,42,1,0.5);
+  padding: 1em;
+}
+
+.text-box-lightblue
+{
+  background-color: rgba(24,100,147,0.5);
+  padding: 1em;
 }
 
 .text-box-white
@@ -274,7 +285,7 @@
 
 .main-lead-text
 {
-  padding: 0.3em;
+  padding: 0.2em;
   font-family: "Raleway";
   font-weight: 700;
   text-transform: uppercase;

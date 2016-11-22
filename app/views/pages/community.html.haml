@@ -8,9 +8,28 @@
 
     .row
       .col-md-6
+        %p.lead Entropy Rocket Chat
+        %p
+          Live chat here: >
+          %strong
+            = link_to 'Entropy Rocket', 'https://rocket.project-entropy.com'
+
+        %p
+          Making use of the open source
+          = link_to 'Rocket.chat', 'https://rocket.chat/'
+          chat platform, join us to help steer the project!
+      .col-md-6
+        %br
+        = image_tag 'https://rocket.chat/images/logo/logo-dark.svg?v3', class: 'img-responsive'
+    .row
+      .col-md-12
+        %hr
+
+    .row
+      .col-md-6
         %p.lead Secure Scuttlebutt
         %p
-          Find us in the
+          We're also in the
           %strong #project-entropy
           channel on
           = link_to 'patchwork', 'https://ssbc.github.io/patchwork/'

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require fittext
+//= require leaflet
 //= require wow
 //= require components
 //= require_tree .

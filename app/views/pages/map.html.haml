@@ -1,15 +1,46 @@
-%header.map
-  .header-content
-    .header-content-inner
-      %h1.main-lead-text Join us as we sail around the world
-      %hr/
-      %p
-      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#map"} See Our Route
 %section#map
   .container
     .row
-      .col-lg-12.text-center
-        %h2.section-heading Route
-        %hr.primary/
+      .col-lg-12
+        %h2.section-heading Fleet Status
+        
+        %p.lead Keep track of our vessels, guardians and events around the world
 
-        %iframe{ src: "https://www.google.com/maps/d/u/0/embed?mid=zEcDfPg7W8kI.ka6sxEQkYi6A", width: "100%", height: "480" }
+        #map-container
+
+        %script
+          var TILE_URL_TEMPLATE = 'http://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}';
+          var DEFAULT_ZOOM = 2;
+          var MAX_ZOOM = 8;
+          var MARKER_BOUNDS_PADDING = [20, 20];
+
+          var map = L.map('map-container');
+
+          var tileLayer = L.tileLayer(TILE_URL_TEMPLATE, { maxZoom: MAX_ZOOM, attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri' })
+          tileLayer.addTo(map);
+
+          var personIcon  = L.divIcon({className: 'person-icon', html: '#{ image_tag("icons500pxpin.png", width: "20px", style: "-webkit-filter: invert(1); filter: invert(1);")}'});
+          var boatIcon    = L.divIcon({className: 'boat-icon', html: '#{ image_tag("icons500pxaboard.png", width: "50px", style: "-webkit-filter: invert(1); filter: invert(1);")}'});
+
+          var markers = [];
+
+
+          var marker = L.marker([-36.894526, 174.7372323], {icon: personIcon})
+          marker.addTo(map);
+          markers.push(marker);
+
+          var marker = L.marker([-36.8424989,174.7499016], {icon: boatIcon})
+          marker.addTo(map);
+          markers.push(marker);
+
+          var marker = L.marker([23.0590049,112.3348532], {icon: personIcon})
+          marker.addTo(map);
+          markers.push(marker);
+
+          var marker = L.marker([51.5287714,-0.2420237], {icon: personIcon})
+          marker.addTo(map);
+          markers.push(marker);
+
+
+          var group = new L.featureGroup(markers);
+          map.fitBounds(group.getBounds(), { padding: MARKER_BOUNDS_PADDING });

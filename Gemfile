@@ -24,6 +24,8 @@ gem "figaro"
 # API Calling
 gem 'rest-client'
 
+gem 'leaflet-rails'
+
 # Cache
 gem 'dalli'
 

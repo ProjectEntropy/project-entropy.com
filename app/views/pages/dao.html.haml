@@ -3,160 +3,154 @@
 %section
   .container
     .row
-      .col-lg-12.text-center
-        %h2.section-heading The Entropy DAO
-        %hr.primary/
+      .col-sm-8
+        %h2.section-heading
+          The Entropy DAO
+
         %p.lead
           Entropy is built ontop of an experimental but simple DAO structure
           designed to balance a real world project with the benefits of crowd wisdom and blockchain transparency
-
-  .container-fluid
-    = inline_svg "DAO_overview.svg"#, class: 'some-class'
-
-  .container
+      .col-sm-4
+        :plain
+          <div class="github-card" data-github="ProjectEntropy/contracts" data-theme="default"></div>
+          <div class="github-card" data-github="ProjectEntropy/project-entropy.com" data-theme="default"></div>
+          <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     .row
       .col-lg-12
-        %h3.c3.c4{:id => "h.hlfgp9dl02d7"}
-          %span Community
-        %p.c3
-          %span.c0 Citizens
-          %span  hold the following rights:
-        %ul.c1.lst-kix_dtboubr0la3w-0.start
-          %li.c3.c7
-            %span A single vote on every created
-            %span.c0 Action
-          %li.c3.c7
-            %span Creating
-            %span.c0 Actions
-            %span  
-          %li.c3.c7
-            %span.c0 Guardian
-            %span  nomination
-        %p.c2
-          %span
-        %p.c3
-          %span Anyone can become an
-          %span.c0 Entropy Citizen
-          %span  by obtaining one or more
-          %span.c0 Entropy Tokens
-          %span .
-        %p.c2
-          %span
-        %p.c3
-          %span.c0 Citizens
-          %span  hold equal voting rights to everyone in the
-          %span.c0 Entropy Community
-          %span , they are able to suggest any
-          %span.c0 Action
-          %span  for discussion and vote. These
-          %span.c0 Actions
-          %span  can be anything at all, from destinations to sail to, events, changes to the mission itself and changes to the
-          %span.c0 Guardians
-          %span .
-        %p.c2
-          %span
-        %p.c3
-          %span An
-          %span.c0 Entropy Citizen
-          %span  is anyone who holds one or more
-          %span.c0 Entropy Tokens
-          %span . Anyone with an Ethereum address can hold
-          %span.c0 Entropy Tokens
-          %span .
-        %p.c2
-          %span
-        %h3.c3.c4{:id => "h.9yly0wmxu5s2"}
-          %span Guardians
-        %p.c3
-          %span Any
-          %span.c0 Entropy Citizen
-          %span  can be elected to be a
-          %span.c0 Guardian
-          %span  by an accepted
-          %span.c0 Action.
-        %p.c2
-          %span
-        %p.c3
-          %span The
-          %span.c0 Guardians
-          %span  take on the responsibility to fulfill and document everything within the
-          %span.c0 Action Stream
-          %span  as organised by and voted on by the wider community.
-        %p.c2
-          %span
-        %p.c3
-          %span.c0 Guardians
-          %span  have, in addition to the rights of all
-          %span.c0 Citizens
-          %span , access to any shared funds moved to the
-          %span.c0 Slush Pool
-          %span  by the
-          %span community
-          %span  voting as a whole, see below.
-        %p.c2
-          %span.c0
-        %h3.c3.c4{:id => "h.7pw55dn4am1s"}
-          %span Actions and Funds
-        %p.c3
-          %span Any
-          %span.c0 Citizen
-          %span  can propose a new
-          %span.c0 Action
-          %span .
-        %p.c2
-          %span
-        %p.c3
-          %span All
-          %span.c0 Actions
-          %span  can be voted on by the entire community for 5 days.
-        %p.c2
-          %span
-        %p.c3
-          %span For an
-          %span.c0 Action
-          %span  to be accepted, it must have more than 50% approval and at least as many votes as there are
-          %span.c0 Guardian
-          %span  members (although voting is open to all
-          %span.c0 Citizens
-          %span ).
-        %p.c2
-          %span
-        %p.c3
-          %span After this period accepted
-          %span.c0 Actions
-          %span  will be added to the
-          %span.c0 Action Stream
-          %span until they are marked as complete by one of the
-          %span.c0 Guardians
-          %span .
-        %p.c2
-          %span
-        %p.c3
-          %span Declined
-          %span.c0 Actions
-          %span  will be dismissed to the
-          %span.c0 Archive
-          %span .
-        %p.c2
-          %span
-        %p.c3
-          %span The
-          %span.c0 Action Stream
-          %span represents what the community is currently aiming to achieve.
-        %p.c2
-          %span
-        %p.c3
-          %span Any funds associated with
-          %span.c0 Actions
-          %span  in the
-          %span.c0 Action Stream
-          %span  become available in the
-          %span.c0 Slush Pool
-          %span  for members of the
-          %span.c0 Guardians
-          %span  to use towards making those
-          %span.c0 Actions
-          %span  happen.
-        %p.c2
-          %span
-        %p.c2
+        = inline_svg "DAO_overview.svg"#, class: 'some-class'
+
+
+    .row
+      .col-lg-12
+        %h3
+          %a#user-content-community-house_with_garden.anchor{"aria-hidden" => "true", :href => "#community-house_with_garden"}>
+            %svg.octicon.octicon-link{"aria-hidden" => "true", :height => "16", :version => "1.1", :viewbox => "0 0 16 16", :width => "16"}
+              %path{:d => "M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z", "fill-rule" => "evenodd"}
+          Community
+          %g-emoji{:alias => "house_with_garden", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f3e1.png", "ios-version" => "6.0"} 🏡
+        %p
+          Citizens
+          %g-emoji{:alias => "two_men_holding_hands", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f46c.png", "ios-version" => "6.0"} 👬
+          hold the following rights:
+        %ul
+          %li
+            A single Vote
+            %g-emoji{:alias => "hand", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png", "ios-version" => "6.0"} ✋
+            on every created Action
+            %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          %li
+            Creating Actions
+            %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          %li
+            Guardian
+            %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+            nomination
+        %p
+          Anyone can become a Citizen
+          %g-emoji{:alias => "running_man", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f3c3.png", "ios-version" => "6.0"} 🏃
+          by obtaining and holding one or more Entropy Tokens
+          %g-emoji{:alias => "cookie", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f36a.png", "ios-version" => "6.0"} 🍪
+        %p
+          The individuality of citizens is confirmed by the guardians, once it is confirmed
+          they become Trusted Citizens
+          %g-emoji{:alias => "two_women_holding_hands", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f46d.png", "ios-version" => "6.0"} 👭
+        %p
+          Trusted Citizens
+          %g-emoji{:alias => "two_women_holding_hands", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f46d.png", "ios-version" => "6.0"} 👭
+          hold equal voting rights to all trusted individuals in the Entropy Community, they are able to suggest any Action
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          for discussion and vote. These Actions
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          can be anything at all, from destinations to sail to, events, changes to the mission itself and changes to the Guardians
+          %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+        %h3
+          %a#user-content-guardians-guardsman.anchor{"aria-hidden" => "true", :href => "#guardians-guardsman"}>
+            %svg.octicon.octicon-link{"aria-hidden" => "true", :height => "16", :version => "1.1", :viewbox => "0 0 16 16", :width => "16"}
+              %path{:d => "M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z", "fill-rule" => "evenodd"}
+          Guardians
+          %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+        %p
+          Guardians
+          %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+          take on the responsibility to fulfil and document everything within the Action Stream
+          %g-emoji{:alias => "clipboard", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cb.png", "ios-version" => "6.0"} 📋
+          as organised by and voted on by the wider community.
+        %p
+          They have, in addition to the rights of all Citizens
+          = succeed "," do
+            %g-emoji{:alias => "running_man", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f3c3.png", "ios-version" => "6.0"} 🏃
+          %g-emoji{:alias => "moneybag", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4b0.png", "ios-version" => "6.0"} 💰
+          by the community voting as a whole.
+        %p
+          Guardians are also able to mark Citizens as trusted, allowing for a human-based
+          proof of individuality system.
+        %p
+          Any Citizen
+          %g-emoji{:alias => "running_man", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f3c3.png", "ios-version" => "6.0"} 🏃
+          can be elected to be a Guardian
+          %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+          by an accepted Action
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+        %p Guardians are accountable to the wider community and can, if needs be, be unelected by a successful Action against them.
+        %h3
+          %a#user-content-actions-and-funds-bulb-moneybag.anchor{"aria-hidden" => "true", :href => "#actions-and-funds-bulb-moneybag"}>
+            %svg.octicon.octicon-link{"aria-hidden" => "true", :height => "16", :version => "1.1", :viewbox => "0 0 16 16", :width => "16"}
+              %path{:d => "M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z", "fill-rule" => "evenodd"}
+          Actions and Funds
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          %g-emoji{:alias => "moneybag", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4b0.png", "ios-version" => "6.0"} 💰
+        %p
+          Any Citizen
+          %g-emoji{:alias => "running_man", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f3c3.png", "ios-version" => "6.0"} 🏃
+          can propose a new Action
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+        %p
+          All Actions
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          can be voted
+          %g-emoji{:alias => "hand", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png", "ios-version" => "6.0"} ✋
+          on by the entire community for 5 days.
+        %p
+          For an Action
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          to be accepted, it must have
+          %em more than 50% approval
+          and at least as many votes
+          %g-emoji{:alias => "hand", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png", "ios-version" => "6.0"} ✋
+          as there are Guardian
+          %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+          members (although voting is open to all Citizens
+          = succeed ")." do
+            %g-emoji{:alias => "family_man_woman_boy", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f46a.png", "ios-version" => "6.0"} 👪
+        %p
+          After this period accepted Actions
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          will be added to the Action Stream
+          %g-emoji{:alias => "clipboard", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cb.png", "ios-version" => "6.0"} 📋
+          until they are marked as complete by one of the Guardians
+          %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+        %p
+          Declined Actions
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          will be dismissed to the Archive
+          %g-emoji{:alias => "recycle", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/267b.png", "ios-version" => "6.0"} ♻️
+        %p
+          The Action Stream
+          %g-emoji{:alias => "clipboard", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cb.png", "ios-version" => "6.0"} 📋
+          represents what the community is currently aiming to achieve.
+        %p
+          Any funds associated with Actions
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          in the Action Stream
+          %g-emoji{:alias => "clipboard", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cb.png", "ios-version" => "6.0"} 📋
+          become available in the Slush Pool
+          %g-emoji{:alias => "moneybag", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4b0.png", "ios-version" => "6.0"} 💰
+          for the Guardians
+          %g-emoji{:alias => "guardsman", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png", "ios-version" => "6.0"} 💂
+          to use towards making those Actions
+          %g-emoji{:alias => "bulb", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png", "ios-version" => "6.0"} 💡
+          happen.
+        %p
+          %g-emoji{:alias => "rainbow", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f308.png", "ios-version" => "6.0"} 🌈
+          %g-emoji{:alias => "boat", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/26f5.png", "ios-version" => "6.0"} ⛵️
+          %g-emoji{:alias => "fireworks", "fallback-src" => "https://assets-cdn.github.com/images/icons/emoji/unicode/1f386.png", "ios-version" => "6.0"} 🎆

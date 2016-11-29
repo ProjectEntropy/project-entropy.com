@@ -6,7 +6,7 @@
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Entropy'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'
-    
+
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
 
     = google_webfonts_init({google: ['Roboto', 'Raleway:400,700']})
@@ -17,6 +17,9 @@
     %link{:href => "/manifest.json", :rel => "manifest"}/
     %link{:color => "#5bbad5", :href => "/safari-pinned-tab.svg", :rel => "mask-icon"}/
     %meta{:content => "#ffffff", :name => "theme-color"}/
+
+    :plain
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     = csrf_meta_tags
 

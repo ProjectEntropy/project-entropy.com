@@ -1,4 +1,4 @@
-[![Entropy](https://s3-ap-southeast-2.amazonaws.com/bitboatassets/web/entropy.png)](https://s3-ap-southeast-2.amazonaws.com/bitboatassets/web/entropy.png)
+<img src="https://s3-ap-southeast-2.amazonaws.com/bitboatassets/web/entropy.png">
 
 Project Entropy
 ================

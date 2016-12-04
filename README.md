@@ -1,3 +1,5 @@
+[![Entropy](https://s3-ap-southeast-2.amazonaws.com/bitboatassets/web/entropy.png)](https://s3-ap-southeast-2.amazonaws.com/bitboatassets/web/entropy.png)
+
 Project Entropy
 ================
 [![Build Status](https://img.shields.io/travis/ProjectEntropy/project-entropy.com.svg)](https://travis-ci.org/ProjectEntropy/project-entropy.com)
@@ -18,5 +20,6 @@ Status
 
 Contributing
 ------------
+We'd love you to help!
 
-Hit us up with a PR, or join the discussion over on [Collabotree](http://collabotree.com/leafs/entropy-bitcoin-coworking-space-aboard-a-catamaran)
+Hit us up with a PR, or join the discussion over on [Our Rocket](https://rocket.project-entropy.com)

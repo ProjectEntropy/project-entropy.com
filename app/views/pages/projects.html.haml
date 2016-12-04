@@ -1,0 +1,148 @@
+= content_for :title do
+  Projects
+%section
+  .container
+    .row
+      .col-sm-4
+        = image_tag 'Token_Incubator.png', class: 'img-responsive'
+      .col-sm-8
+        %h2.section-heading
+          Projects Aboard Entropy
+        -#
+        -# %p.lead
+        -#   Everyone involved is committed not only to building things which make
+        -#   the world better, but also making everything reusable and open.
+
+        %p.lead
+          Some of these projects are already ongoing, some will start as soon
+          as the fleet forms
+
+        %button.btn.btn-success
+          Start your own
+    %hr
+    .row
+      .col-sm-12
+        .card
+          .container-fliud
+            .wrapper.row
+              .preview.col-md-6
+                .preview-pic.tab-content
+                  #pic-1.tab-pane.active
+                    =image_tag 'projects/delta_printer_1.jpg'
+                  #pic-2.tab-pane
+                    =image_tag 'projects/cnc_cutter.jpg'
+                  #pic-3.tab-pane
+                    =image_tag 'projects/delta_printer_2.jpg'
+
+                %ul.preview-thumbnail.nav.nav-tabs
+                  %li.active
+                    %a{"data-target" => "#pic-1", "data-toggle" => "tab"}
+                      = image_tag 'projects/delta_printer_1.jpg'
+                  %li
+                    %a{"data-target" => "#pic-2", "data-toggle" => "tab"}
+                      = image_tag 'projects/cnc_cutter.jpg'
+                  %li
+                    %a{"data-target" => "#pic-3", "data-toggle" => "tab"}
+                      = image_tag 'projects/delta_printer_2.jpg'
+
+
+              .details.col-md-6
+                %h3.product-title Entropy Delta Printer / Mini Mill
+
+                %p.product-description
+                  %p
+                    Based off the JKeep RoStock modified design - we've designed a
+                    quick release multi purpose holder which can attach tools for
+                    extruding clay, plastic or to hold a cutting tool.
+                  %p
+                    The next stage is to get things working with recycled plastic from the
+                    ocean.
+                  %p
+                    = image_tag 'icons/thingiverse.png'
+                    = link_to 'http://www.thingiverse.com/thing:753874' do
+                      Makita Trimmer Router Holder
+
+                  %p
+                    = image_tag 'icons/thingiverse.png'
+                    = link_to 'http://www.thingiverse.com/thing:1090311' do
+                      Delta Printer Extrusion Holder (JKeep Version)
+
+                  %hr
+                  %p.lead
+                    Status: 80% Complete
+    .col-sm-12
+      .card
+        .container-fliud
+          .wrapper.row
+            .preview.col-md-6
+              .preview-pic.tab-content
+                #pic-6.tab-pane.active
+                  =image_tag 'projects/battery_bank1.png'
+                #pic-7.tab-pane
+                  =image_tag 'projects/sd151.jpg'
+                #pic-8.tab-pane
+                  =image_tag 'projects/ax8.jpg'
+
+              %ul.preview-thumbnail.nav.nav-tabs
+                %li.active
+                  %a{"data-target" => "#pic-6", "data-toggle" => "tab"}
+                    = image_tag 'projects/battery_bank1.png'
+                %li
+                  %a{"data-target" => "#pic-7", "data-toggle" => "tab"}
+                    = image_tag 'projects/sd151.jpg'
+                %li
+                  %a{"data-target" => "#pic-8", "data-toggle" => "tab"}
+                    = image_tag 'projects/ax8.jpg'
+
+
+            .details.col-md-6
+              %h3.product-title Organically Grown Movement
+
+              %p.product-description
+                %p
+                  Using reclaimed laptop batteries, together with wind & solar energy - we aim to make
+                  the Entropy fleet move with 0 carbon impact.
+
+                %hr
+                %p.lead
+                  Status: Concept
+
+
+    .col-sm-12
+      .card
+        .container-fliud
+          .wrapper.row
+            .details.col-md-6.text-right
+              %h3.product-title DAO Generator
+
+              %p.product-description
+                %p
+                  We're entering an age where people can gather around an idea
+                  and make things happen, together.
+                %p
+                  Things are still quite complicated, so we'd like to make it
+                  really easy for others to set up projects similar to Entropy
+                  itself.
+                %p
+                  %span.fa.fa-github
+                  = link_to 'https://github.com/ProjectEntropy/contracts' do
+                    Entropy Contracts
+                %hr
+                %p.lead
+                  Status: 60% Complete
+
+            .preview.col-md-6
+              .preview-pic.tab-content
+                #pic-4.tab-pane.active
+                  =image_tag 'projects/stack.jpg'
+                #pic-5.tab-pane
+                  =image_tag 'projects/entropy_contracts.png'
+
+
+              %ul.preview-thumbnail.nav.nav-tabs
+                %li.active
+                  %a{"data-target" => "#pic-4", "data-toggle" => "tab"}
+                    = image_tag 'projects/stack.jpg'
+                %li
+                  %a{"data-target" => "#pic-5", "data-toggle" => "tab"}
+                    = image_tag 'projects/entropy_contracts.png'

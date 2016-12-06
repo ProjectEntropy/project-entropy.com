@@ -17,11 +17,28 @@
  */
 
 
-
-#mainNav
+@media (max-width: 768px)
 {
-  background-color: rgba(26, 45, 111, 0.6);
-  border: none;
+  #mainNav
+  {
+    background-color: #000;
+    border: none;
+    color: white !important;
+
+    a
+    {
+      color: white !important;
+    }
+  }
+}
+
+@media (min-width: 769px)
+{
+  #mainNav
+  {
+    background-color: rgba(26, 45, 111, 0.6);
+    border: none;
+  }
 }
 
 
@@ -96,7 +113,8 @@
   background-color:#f1f1f1
 }
 
-.progressbar{
+.progressbar
+{
   background-color:#757575;
   height:100%;
   position:absolute;

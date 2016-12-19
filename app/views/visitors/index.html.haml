@@ -48,11 +48,12 @@
     .row
       .col-sm-7.col-sm-offset-5.text-box-red.text-right
         %p.lead
-          We're establishing a crowd-owned and community steered fleet of sailing
-          hackspaces around the world -
+          We're launching a community steered fleet of sailing
+          hackspaces, starting with a crowd-owned boat that sails around the world
         %p.lead
-          anyone can be part of our global community and
-          anyone can volunteer to help us sail
+          anyone can be part of our global community, as a citizen, volunteer crew or skipper
+          with your own boat
+
 
 
 
@@ -68,9 +69,13 @@
     .row
       .col-sm-7.text-box-lightblue.text-left
         %p.lead
-          With an entropy token you become part of
+          As a citizen of Entropy, you can be part of
           the community that suggests and
-          votes on everything the fleet is aiming for
+          votes on everything the fleet is aiming for - destinations, ideas and projects
+
+      .col-sm-7.no-padding
+        = link_to 'JOIN COMMUNITY', page_path('community'), class:'btn btn-primary btn-lg btn-block ghost-button-lightblue'
+
 
     -# .banner-left.col-lg-7.text-box-white
     -#   .row
@@ -98,9 +103,12 @@
           We are all about being creative
           %br - manually & digitally.
         %p.lead
-          We want to share this and set aside room and time to develop cool projects, push blockchain and p2p ideas
+          We want to share this and set aside room and time to develop cool projects, push blockchain, ethereum and p2p ideas
         %p.lead
           all open source of course!
+
+      .col-sm-7.col-sm-offset-5.text-right.no-padding
+        = link_to 'projects', page_path('community'), class:'btn btn-primary btn-lg btn-block ghost-button-lightblue'
 
 .header.secondary.map.text-left
   .container
@@ -119,9 +127,9 @@
 
 
         %p.lead
-          Entropy is growing into a decentralised autonomous organisation with a global
+          Entropy is growing into a decentralised autonomous organisation (DAO) with a global
           community at its heart.
-          Among other things you can suggest and vote on the destinations of Entropy
+          Among other things you can suggest and vote on the destinations of the Entropy Flotilla
 
 
 .header.secondary.afloat.text-left
@@ -136,8 +144,21 @@
     .row
       .col-sm-7.col-sm-offset-5.text-right.text-box
         %p.lead
-          Citizenship Tokens give you the
-          ability to become part of our community
+          Crowdfund will start early 2017, where you can become part of the
+          Entropy community with your citizenship on the Ethereum blockchain.
+        %p.lead
+          Do you want to help on the development side? We would love for you to
+          make Entropy safer, easier, faster. Anyone who successfully
+          contributes on the
+          %strong
+            = link_to 'Entropy Github', 'https://github.com/ProjectEntropy', class:'white'
+          will become citizen!
+        %p.lead
+          Join our
+          %strong
+            = link_to 'community', page_path('community'), class: 'white'
+          and learn how you can become a part of Entropy now.
+
 
 
 %section.no-padding

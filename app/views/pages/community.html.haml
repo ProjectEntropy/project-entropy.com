@@ -7,12 +7,13 @@
         %h2.section-heading Community
 
     .row
-      .col-md-8
+      .col-sm-8
         .row
-          .col-md-6
+          .col-sm-9
             %p.lead Entropy Rocket Chat
             %p
-              Live chat here: >
+              Live chat here:
+              = image_tag 'https://cdn-www.rocket.chat/images/logo/512x512.png', style:"height:1.5em"
               %strong
                 = link_to 'Entropy Rocket', 'https://rocket.project-entropy.com'
 
@@ -20,15 +21,10 @@
               Making use of the open source
               = link_to 'Rocket.chat', 'https://rocket.chat/'
               chat platform, join us to help steer the project!
-          .col-md-6
-            %br
-            = image_tag 'https://rocket.chat/images/logo/logo-dark.svg?v3', class: 'img-responsive'
-        .row
-          .col-md-12
-            %hr
+
 
         .row
-          .col-md-6
+          .col-sm-6
             %p.lead Secure Scuttlebutt
             %p
               We're also in the
@@ -51,6 +47,6 @@
             %br
             = image_tag 'patchwork.png', class: 'img-responsive'
 
-      .col-md-4
+      .col-sm-4
         :plain
           <a class="twitter-timeline" href="https://twitter.com/EntropyBoat">Tweets by EntropyBoat</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

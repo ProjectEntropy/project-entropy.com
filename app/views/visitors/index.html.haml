@@ -1,10 +1,11 @@
 .header.homepage
-  .header-content
+  .header-content.scrollme
     .row
       .col-md-8.col-md-offset-1
-        = image_tag "entropy_logo_text_white.png", class: 'main-logo img-responsive'
+        .effect_box.effect_box_translate.animateme{"data-opacity" => "0", "data-from" => "0", "data-to" => "0.5", "data-translatex" => "-100", "data-translatey" => "-100", "data-when" => "span"}
+          = image_tag "entropy_logo_text_white.png", class: 'main-logo img-responsive'
     .row
-      .col-md-7.col-md-offset-3.text-right.banner-logo-tagline
+      .col-md-7.col-md-offset-3.text-right.banner-logo-tagline.animateme{"data-opacity" => "0", "data-from" => "0.2", "data-to" => "0.6", "data-translatex" => "200", "data-translatey" => "0", "data-when" => "span"}
         %h1.main-lead-text.bigger.logo-tagline A Floating Blockchain Experiment
 
 
@@ -36,7 +37,7 @@
 
 
 .header.secondary.alpha
-  .container
+  .container.animateme.scrollme{"data-from" => "0.75", "data-opacity" => "0", "data-to" => "0", "data-translatex" => "400", "data-when" => "enter", :style => "opacity: 0.77; transform: translate3d(91px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);"}
     .row
       .col-sm-7.col-sm-offset-5.text-box-red.text-right
         %br
@@ -57,7 +58,7 @@
 
 
 
-.header.secondary.community
+.header.secondary.community.scrollme
   .container
     .row
       .col-sm-7.text-box-lightblue.text-left
@@ -73,7 +74,7 @@
           the community that suggests and
           votes on everything the fleet is aiming for - destinations, ideas and projects
 
-      .col-sm-7.no-padding
+      .col-sm-7.no-padding.animateme.scrollme{"data-from" => "0.75", "data-opacity" => "0", "data-to" => "0", "data-translatex" => "-400", "data-when" => "enter", :style => "opacity: 0.77; transform: translate3d(91px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);"}
         = link_to 'JOIN US', page_path('community'), class:'btn btn-primary btn-lg btn-block ghost-button-lightblue'
 
 
@@ -87,7 +88,7 @@
     -#
 
 
-.header.secondary.beta
+.header.secondary.beta.scrollme
   .container
     .row
 
@@ -107,10 +108,10 @@
         %p.lead
           all open source of course!
 
-      .col-sm-7.col-sm-offset-5.text-right.no-padding
+      .col-sm-7.col-sm-offset-5.text-right.no-padding.animateme.scrollme{"data-from" => "0.75", "data-opacity" => "0", "data-to" => "0", "data-translatex" => "400", "data-when" => "enter", :style => "opacity: 0.77; transform: translate3d(91px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);"}
         = link_to 'projects', page_path('projects'), class:'btn btn-primary btn-lg btn-block ghost-button-lightblue'
 
-.header.secondary.map.text-left
+.header.secondary.map.text-left.scrollme
   .container
     .row
       .col-sm-8.text-left.text-box-red
@@ -132,7 +133,7 @@
           Among other things you can suggest and vote on the destinations of the Entropy Flotilla
 
 
-.header.secondary.afloat.text-left
+.header.secondary.afloat.text-left.scrollme
   .container
     .row
       .col-lg-7.col-sm-offset-5.text-right.text-box

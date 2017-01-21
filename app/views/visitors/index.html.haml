@@ -10,29 +10,9 @@
 
 
   .banner-stats.col-md-6
-    -# .row
-    -#   .col-xs-3
-    -#     %h1#days --
-    -#     %h4 Days
-    -#   .col-xs-3
-    -#     %h1#hours --
-    -#     %h4 Hours
-    -#   .col-xs-3
-    -#     %h1#minutes --
-    -#     %h4 Minutes
-    -#   .col-xs-3
-    -#     %h1#seconds --
-    -#     %h4 Seconds
-    .row
-      .col-sm-6.text-left
-        %h3 5 Citizens
-      .col-sm-6.text-right
-        %h3 125 Ether
-    .row
-      .col-sm-12
-        .progress-container
-          .progressbar{ style: "width: 2%; min-width: 27px;" }
-            2%
+    = render partial: 'banner_stats'
+    = render partial: 'overall_stats'
+
 
 
 

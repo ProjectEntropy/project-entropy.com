@@ -125,6 +125,8 @@ GEM
     netrc (0.11.0)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    npm-rails (0.2.1)
+      rails (>= 3.2)
     public_suffix (2.0.5)
     puma (3.6.2)
     quiet_assets (1.1.0)
@@ -251,6 +253,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   leaflet-rails
+  npm-rails
   puma
   quiet_assets
   rack-cors

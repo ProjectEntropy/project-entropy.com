@@ -1,6 +1,6 @@
 var entropy_address = "0x75a178d53f30f5877302682b65563df930c6aaef"
 var entropy_node_address = "https://eth1.project-entropy.com:8545"
-
+var target = 20000
 
 function print(s){
   console.log(s)
@@ -38,17 +38,14 @@ function fetchBalance(adr, callback)
 function updateBalance()
 {
   fetchBalance(entropy_address, function(e, balance){
-    document.getElementById('coinbase').innerText = entropy_address
-
-    var target = 100.0
     var ether = web3.fromWei(balance)
     document.getElementById("ether_count").innerText = ether
 
-    var percentage = Math.floor( ether / target * 100 )
+    var percentage = ( ether / target * 100 ).toFixed(2)
     var progress = document.getElementById("crowdfund_progress")
 
     progress.innerText = percentage + "%"
-    progress.style = "width: " + percentage + "%; min-width: 27px;"
+    progress.style = "width: " + percentage + "%; min-width: 50px;"
     //
   })
 }

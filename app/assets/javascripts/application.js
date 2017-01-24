@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require npm-dependencies
 //= require turbolinks
 //= require fittext
 //= require leaflet
 //= require wow
-//= require components
 //= require_tree .

@@ -54,7 +54,7 @@ function updateBalance()
     var progress = document.getElementById("crowdfund_progress")
 
     progress.innerText = percentage + "%"
-    progress.style = "width: " + percentage + "%; min-width: 50px;"
+    progress.style = `width: %{percentage}%; min-width: 50px;`
     //
   })
 }

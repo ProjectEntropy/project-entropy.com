@@ -1,6 +1,7 @@
 var entropy_address = "0x75a178d53f30f5877302682b65563df930c6aaef"
 var entropy_node_address = "https://eth1.project-entropy.com:8545"
 var target = 20000
+var entropy
 
 function print(s){
   console.log(s)
@@ -26,6 +27,14 @@ function initalizeWeb3()
     }
   }
 
+  wrapEntropy()
+}
+
+// Wrap the entropy dApp in a truffle interface to make things easier
+function wrapEntropy()
+{
+  Entropy.setProvider(web3);
+  entropy = Entropy.at(entropy_address)
 }
 
 // Fetch the balance of an address

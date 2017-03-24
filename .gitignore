@@ -82,3 +82,6 @@ pickle-email-*.html
 /config/application.yml
 # Added by npm-rails
 /node_modules
+# Added by webpack-rails
+/node_modules
+/public/webpack

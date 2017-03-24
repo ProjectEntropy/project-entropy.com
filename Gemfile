@@ -13,9 +13,6 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'rails'
 gem 'sass-rails'
 
-# NPM support for Rails with Bundler-like DSL
-gem 'npm-rails'
-
 gem 'google-webfonts-rails'
 
 # JS assets
@@ -73,3 +70,5 @@ group :production do
   gem 'puma'
   gem 'rails_12factor'
 end
+
+gem 'foreman'

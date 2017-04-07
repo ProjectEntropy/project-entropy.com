@@ -9,6 +9,8 @@
         %span.icon-bar
       = link_to root_path, class: 'navbar-brand page-scroll' do
         = image_tag "entropy_logo_text_white.png", style: "max-width:150px; margin-top: -9px;"
-
-    / Collect the nav links, forms, and other content for toggling
-    = render 'layouts/navigation_links'
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse.main-navbar
+      / Collect the nav links, forms, and other content for toggling
+      = render 'layouts/navigation_links'
+      %ul.nav.navbar-nav.navbar-right
+        = render 'layouts/nav_links_for_auth'

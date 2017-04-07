@@ -1,0 +1,16 @@
+%section
+  .container
+    .row
+
+      %h1 Project Entropy Log
+
+      - @posts.each do |post|
+        .row
+          .col-lg-6
+            %h2= post.title
+            %p
+              - post.tags.split(",").each do |t|
+                %span.label.label-info= t
+            %span.text-muted= post.created_at.strftime("%d %B, %Y")
+            %p.lead
+              = post.body_markdown.html_safe

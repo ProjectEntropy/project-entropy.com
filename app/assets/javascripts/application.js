@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require fittext
 //= require leaflet
+//= require md_simple_editor
 //= require wow
 //= require components
 //= require_tree .

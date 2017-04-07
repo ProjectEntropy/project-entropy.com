@@ -1,21 +1,21 @@
-#bs-example-navbar-collapse-1.collapse.navbar-collapse.main-navbar
-  %ul.nav.navbar-nav.navbar-right
-    %li
-      = link_to page_path('community') do
-        Community
-    %li
-      = link_to page_path('projects') do
-        Projects
-    %li
-      = link_to page_path('dao') do
-        Our DAO
-    %li
-      = link_to page_path('crowdfund') do
-        Crowdfund
-    %li
-      = link_to page_path('map') do
-        Map
 
-    %li
-      = link_to page_path('news') do
-        Log
+%ul.nav.navbar-nav
+  %li
+    = link_to page_path('community') do
+      Community
+  %li
+    = link_to page_path('projects') do
+      Projects
+  %li
+    = link_to page_path('dao') do
+      Our DAO
+  %li
+    = link_to page_path('crowdfund') do
+      Crowdfund
+  %li
+    = link_to page_path('map') do
+      Map
+
+  %li
+    = link_to posts_path do
+      Log

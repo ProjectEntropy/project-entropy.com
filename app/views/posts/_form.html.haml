@@ -1,0 +1,14 @@
+
+= simple_form_for(@post) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+
+    = md_simple_editor do
+      = f.text_area :body, class: "form-control"
+    = f.association :user
+    = f.input :tags
+
+  .form-actions
+    = f.button :submit

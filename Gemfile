@@ -13,6 +13,12 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'rails'
 gem 'sass-rails'
 
+gem 'devise'
+gem 'devise-bootstrap-views'
+gem "cancancan"
+
+gem 'md_simple_editor'
+
 gem 'google-webfonts-rails'
 
 # JS assets
@@ -25,6 +31,8 @@ gem "figaro"
 gem 'rest-client'
 
 gem 'leaflet-rails'
+
+gem 'redcarpet'
 
 # Cache
 gem 'dalli'
@@ -48,7 +56,7 @@ gem 'spring',  group: :development
 
 gem 'haml-rails'
 gem 'high_voltage'
-# gem 'pg'
+gem 'pg'
 gem 'simple_form'
 
 group :development, :test do

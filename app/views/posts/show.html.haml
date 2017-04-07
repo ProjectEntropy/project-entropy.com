@@ -1,0 +1,19 @@
+%section
+  .container
+    .row
+      %p#notice= notice
+
+      %h2 
+        = @post.title
+      %p
+        = @post.body_markdown.html_safe
+      %p
+        %b User:
+        = @post.user
+      %p
+        %b Tags:
+        = @post.tags
+
+      = link_to 'Edit', edit_post_path(@post)
+      \|
+      = link_to 'Back', posts_path

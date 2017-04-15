@@ -77,4 +77,5 @@ end
 group :production do
   gem 'puma'
   gem 'rails_12factor'
+  gem 'heroku-deflater'  # Gzip compression
 end

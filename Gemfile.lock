@@ -230,6 +230,8 @@ GEM
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
     hashdiff (0.3.1)
+    heroku-deflater (0.6.3)
+      rack (>= 1.4.5)
     high_voltage (3.0.0)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
@@ -408,6 +410,7 @@ DEPENDENCIES
   fittextjs_rails
   google-webfonts-rails
   haml-rails
+  heroku-deflater
   high_voltage
   html2haml
   inline_svg

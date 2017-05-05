@@ -7,33 +7,10 @@
     .row
       .col-md-7.col-md-offset-3.text-right.banner-logo-tagline.animateme{"data-opacity" => "0", "data-from" => "0.2", "data-to" => "0.6", "data-translatex" => "200", "data-translatey" => "0", "data-when" => "span"}
         %h1.main-lead-text.bigger.logo-tagline A Floating Blockchain Experiment
-
-
-  .banner-stats.col-md-6
-    -# .row
-    -#   .col-xs-3
-    -#     %h1#days --
-    -#     %h4 Days
-    -#   .col-xs-3
-    -#     %h1#hours --
-    -#     %h4 Hours
-    -#   .col-xs-3
-    -#     %h1#minutes --
-    -#     %h4 Minutes
-    -#   .col-xs-3
-    -#     %h1#seconds --
-    -#     %h4 Seconds
-    .row
-      .col-sm-6.text-left
-        %h3 5 Citizens
-      .col-sm-6.text-right
-        %h3 125 Ether
-    .row
-      .col-sm-12
-        .progress-container
-          .progressbar{ style: "width: 2%; min-width: 27px;" }
-            2%
-
+  .bottom-align-text{ style: 'padding: 1em;'}
+    = link_to 'https://rocket.project-entropy.com', class: 'btn btn-primary' do
+      %i.fa.fa-rocket
+      Join Rocket Chat
 
 
 .header.secondary.alpha

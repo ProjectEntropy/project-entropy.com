@@ -3,11 +3,47 @@
 %section
   .container
     .row
-      .col-lg-12.text-center
-        %h2.section-heading Community
+      .col-lg-12
+        %h3.section-heading How to get involved
+        %br
 
     .row
       .col-sm-8
+        .row
+          .col-sm-9
+            %p.lead
+              🌎 Tribe
+            %p Join the discussion, say hello, visit the fleet for tea or coffee
+            %p
+              = link_to 'https://rocket.project-entropy.com', class: 'btn btn-primary btn-sm' do
+                %i.fa.fa-rocket
+                Rocket Chat
+              = link_to page_path(:map), class: 'btn btn-primary btn-sm' do
+                %i.fa.fa-map
+                Map
+
+            %p.lead.text-right
+              🗺 Ideas & Navigation
+            %p.text-right
+              Suggest or vote on destinations, ideas and projects, together with helping resolve problems the fleet faces.
+
+            %p.lead
+              🙋 Volunteering
+            %p
+              Offer to come aboard and help sail, run events or maintain the fleet
+            %p.lead
+              ✨ Koha
+            %p
+              Helping the project survive by donating your time, tools & parts, food, accommodation or Ether
+            %p.lead.text-right
+              💰 Sponsorship
+            %p.c5.text-right
+              Buy some space on the sail for your brand or message
+            %p.lead
+              🌱 Building
+            %p
+              Build your idea aboard with a small team as the fleet roams around the world
+
         .row
           .col-sm-9
             %p.lead Mailing List
@@ -30,21 +66,6 @@
 
 
         .row
-          .col-sm-9
-            %p.lead Entropy Rocket Chat
-            %p
-              Live chat here:
-              = image_tag 'https://cdn-www.rocket.chat/images/logo/512x512.png', style:"height:1.5em"
-              %strong
-                = link_to 'Entropy Rocket', 'https://rocket.project-entropy.com'
-
-            %p
-              Making use of the open source
-              = link_to 'Rocket.chat', 'https://rocket.chat/'
-              chat platform, join us to help steer the project!
-
-
-        .row
           .col-sm-6
             %p.lead Secure Scuttlebutt
             %p
@@ -54,7 +75,7 @@
               = link_to 'patchwork', 'https://ssbc.github.io/patchwork/'
               , which runs on the
               = link_to 'secure scuttlebutt', 'https://ssbc.github.io/scuttlebot/'
-              crypto chain distributed peer to peer database, designed in part for
+              crypto chain distributed peer to peer offgrid network, designed in part for
               use in marine and other offline internet situations.
             %p
               Scuttlebutt allows the fleet to stay connected with one another even

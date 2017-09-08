@@ -13,6 +13,9 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'rails'
 gem 'sass-rails'
 
+# JS Handling
+gem 'webpacker', '~> 3.0'
+
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem "cancancan"

@@ -49,6 +49,7 @@ gem 'inline_svg'
 # gem 'coinprism'
 
 gem 'asset_sync'
+gem 'fog-aws'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'

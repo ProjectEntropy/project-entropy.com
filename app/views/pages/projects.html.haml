@@ -3,24 +3,45 @@
 %section
   .container
     .row
-      .col-sm-4
-        = image_tag 'Token_Incubator.png', class: 'img-responsive'
-      .col-sm-8
-        %h2.section-heading
-          Projects Aboard Entropy
-        -#
-        -# %p.lead
-        -#   Everyone involved is committed not only to building things which make
-        -#   the world better, but also making everything reusable and open.
+      .col-sm-12
+        .card
+          .container-fliud
+            .wrapper.row
+              .details.col-md-6.text-right
+                %h3.product-title DAO Generator
 
-        %p.lead
-          Some of these projects are already ongoing, some will start as soon
-          as the fleet forms
-        -# 
-        -# %button.btn.btn-success
-        -#   Start your own
-    %hr
-    .row
+                %p.product-description
+                  %p
+                    We're entering an age where people can gather around an idea
+                    and make things happen, together.
+                  %p
+                    Things are still quite complicated, so we'd like to make it
+                    really easy for others to set up projects similar to Entropy
+                    itself.
+                  %p
+                    %span.fa.fa-github
+                    = link_to 'https://github.com/ProjectEntropy/contracts' do
+                      Entropy Contracts
+                  %hr
+                  %p.lead
+                    Status: 60% Complete
+
+              .preview.col-md-6
+                .preview-pic.tab-content
+                  #pic-4.tab-pane.active
+                    =image_tag 'projects/stack.jpg'
+                  #pic-5.tab-pane
+                    =image_tag 'projects/entropy_contracts.png'
+
+
+                %ul.preview-thumbnail.nav.nav-tabs
+                  %li.active
+                    %a{"data-target" => "#pic-4", "data-toggle" => "tab"}
+                      = image_tag 'projects/stack.jpg'
+                  %li
+                    %a{"data-target" => "#pic-5", "data-toggle" => "tab"}
+                      = image_tag 'projects/entropy_contracts.png'
+      .row
       .col-sm-12
         .card
           .container-fliud
@@ -107,42 +128,3 @@
                 %p.lead
                   Status: Concept
 
-
-    .col-sm-12
-      .card
-        .container-fliud
-          .wrapper.row
-            .details.col-md-6.text-right
-              %h3.product-title DAO Generator
-
-              %p.product-description
-                %p
-                  We're entering an age where people can gather around an idea
-                  and make things happen, together.
-                %p
-                  Things are still quite complicated, so we'd like to make it
-                  really easy for others to set up projects similar to Entropy
-                  itself.
-                %p
-                  %span.fa.fa-github
-                  = link_to 'https://github.com/ProjectEntropy/contracts' do
-                    Entropy Contracts
-                %hr
-                %p.lead
-                  Status: 60% Complete
-
-            .preview.col-md-6
-              .preview-pic.tab-content
-                #pic-4.tab-pane.active
-                  =image_tag 'projects/stack.jpg'
-                #pic-5.tab-pane
-                  =image_tag 'projects/entropy_contracts.png'
-
-
-              %ul.preview-thumbnail.nav.nav-tabs
-                %li.active
-                  %a{"data-target" => "#pic-4", "data-toggle" => "tab"}
-                    = image_tag 'projects/stack.jpg'
-                %li
-                  %a{"data-target" => "#pic-5", "data-toggle" => "tab"}
-                    = image_tag 'projects/entropy_contracts.png'

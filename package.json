@@ -1,7 +1,7 @@
 {
   "name": "project-entropy",
   "dependencies": {
-    "@rails/webpacker": "^3.0.1",
+    "@rails/webpacker": "3.4",
     "browserify": "~10.2.4",
     "browserify-incremental": "^3.0.1",
     "react": "^15.3.2",
@@ -12,6 +12,6 @@
     "node": ">= 0.10"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "2.11.2"
   }
 }

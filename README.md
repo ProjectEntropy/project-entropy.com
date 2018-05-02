@@ -12,6 +12,17 @@ What are we doing? Our dream is to fit out the worlds first Blockchain based flo
 
 Blockchain projects are largely intangible, so one of our aims is to bring blockchain based technology into the spotlight, capturing peoples imaginations and showing what a few enthusiastic people can do.
 
+
+Requirements
+-----
+
+yarn
+
+> npm install yarn -g
+
+
+
+
 Status
 -----
 [![Throughput Graph](https://graphs.waffle.io/ProjectEntropy/contracts/throughput.svg)](https://waffle.io/ProjectEntropy/contracts/metrics/throughput)

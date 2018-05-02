@@ -48,7 +48,7 @@ source 'https://rubygems.org' do
   gem "browserify-rails"
   gem 'react-rails', '~> 1.0'
 
-  gem 'asset_sync'
+  # gem 'asset_sync'
   gem 'uglifier'
   gem 'coffee-rails'
   gem 'jquery-rails'

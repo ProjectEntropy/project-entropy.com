@@ -1,6 +1,5 @@
 ruby '2.3.3'
 
-
 # Assets
 source 'https://rails-assets.org' do
   gem 'rails-assets-wow'
@@ -80,6 +79,6 @@ source 'https://rubygems.org' do
   group :production do
     gem 'puma'
     # gem 'rails_12factor'
-    gem 'heroku-deflater'  # Gzip compression
+    # gem 'heroku-deflater'  # Gzip compression
   end
 end

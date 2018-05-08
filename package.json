@@ -2,8 +2,8 @@
   "name": "project-entropy",
   "dependencies": {
     "@rails/webpacker": "3.4",
-    "browserify": "~10.2.4",
-    "browserify-incremental": "^3.0.1",
+    "browserify": "~14.0.0",
+    "browserify-incremental": "^3.1.0",
     "caniuse-lite": "^1.0.30000836",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",

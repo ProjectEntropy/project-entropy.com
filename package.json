@@ -5,6 +5,7 @@
     "browserify": "~14.0.0",
     "browserify-incremental": "^3.1.0",
     "caniuse-lite": "^1.0.30000836",
+    "hoek": "^5.0.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "webpack": "^4.8.1"

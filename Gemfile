@@ -16,7 +16,7 @@ source 'https://rubygems.org' do
   gem 'sass-rails'
 
   # JS Handling
-  gem 'webpacker'#, '~> 3.0'
+  # gem 'webpacker'#, '~> 3.0'
 
   gem 'devise'
   gem 'devise-bootstrap-views'

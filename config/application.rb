@@ -26,7 +26,7 @@ module Bitboat
 
     # config.browserify_rails.source_map_environments << "development"
 
-    config.serve_static_assets = true
+    config.serve_static_files = true
 
     # COMPRESS SHIZZLE
     config.middleware.use Rack::Deflater

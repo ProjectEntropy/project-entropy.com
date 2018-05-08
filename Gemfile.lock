@@ -179,7 +179,12 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_layout (1.0.42)
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (4.2.10)
       actionpack (= 4.2.10)
       activesupport (= 4.2.10)
@@ -301,6 +306,7 @@ DEPENDENCIES
   rails!
   rails-assets-fontawesome!
   rails-assets-wow!
+  rails_12factor!
   rails_layout!
   react-rails (~> 1.0)!
   redcarpet!

@@ -1,0 +1,20 @@
+%section
+  .container
+    .row
+
+      %h1 
+        Users:
+        = @users.length
+
+      - @users.each do |u|
+        .row
+          .col-lg-6
+            %p
+              = u.email
+            %p
+              created_at
+              = time_ago_in_words u.created_at
+            %p
+              signed in at
+              = time_ago_in_words u.last_sign_in_at
+            
